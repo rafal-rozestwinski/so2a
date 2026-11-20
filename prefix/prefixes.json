@@ -1,0 +1,4329 @@
+{
+  "updated": "2026-11",
+  "source": "ITU Appendix 42 / common amateur primary prefixes",
+  "countries": [
+    {
+      "iso": "AF",
+      "name": {
+        "en": "Afghanistan",
+        "pl": "Afganistan",
+        "de": "Afghanistan",
+        "ja": "アフガニスタン",
+        "zh": "阿富汗"
+      },
+      "lat": 34.5553,
+      "lon": 69.2075,
+      "primary": "YA",
+      "prefixes": [
+        "YA",
+        "T6"
+      ]
+    },
+    {
+      "iso": "AX",
+      "name": {
+        "en": "Åland",
+        "pl": "Wyspy Alandzkie",
+        "de": "Åland",
+        "ja": "オーランド諸島",
+        "zh": "奥兰群岛"
+      },
+      "lat": 60.0973,
+      "lon": 19.9348,
+      "primary": "OH0",
+      "prefixes": [
+        "OH0"
+      ]
+    },
+    {
+      "iso": "AL",
+      "name": {
+        "en": "Albania",
+        "pl": "Albania",
+        "de": "Albanien",
+        "ja": "アルバニア",
+        "zh": "阿尔巴尼亚"
+      },
+      "lat": 41.3275,
+      "lon": 19.8187,
+      "primary": "ZA",
+      "prefixes": [
+        "ZA"
+      ]
+    },
+    {
+      "iso": "DZ",
+      "name": {
+        "en": "Algeria",
+        "pl": "Algieria",
+        "de": "Algerien",
+        "ja": "アルジェリア",
+        "zh": "阿尔及利亚"
+      },
+      "lat": 36.7538,
+      "lon": 3.0588,
+      "primary": "7X",
+      "prefixes": [
+        "7X",
+        "7T",
+        "7U",
+        "7V",
+        "7W",
+        "7Y"
+      ]
+    },
+    {
+      "iso": "AS",
+      "name": {
+        "en": "American Samoa",
+        "pl": "Samoa Amerykańskie",
+        "de": "Amerikanisch-Samoa",
+        "ja": "アメリカ領サモア",
+        "zh": "美属萨摩亚"
+      },
+      "lat": -14.2756,
+      "lon": -170.702,
+      "primary": "KH8",
+      "prefixes": [
+        "KH8"
+      ]
+    },
+    {
+      "iso": "AD",
+      "name": {
+        "en": "Andorra",
+        "pl": "Andora",
+        "de": "Andorra",
+        "ja": "アンドラ",
+        "zh": "安道尔"
+      },
+      "lat": 42.5063,
+      "lon": 1.5218,
+      "primary": "C3",
+      "prefixes": [
+        "C3"
+      ]
+    },
+    {
+      "iso": "AO",
+      "name": {
+        "en": "Angola",
+        "pl": "Angola",
+        "de": "Angola",
+        "ja": "アンゴラ",
+        "zh": "安哥拉"
+      },
+      "lat": -8.839,
+      "lon": 13.2894,
+      "primary": "D2",
+      "prefixes": [
+        "D2"
+      ]
+    },
+    {
+      "iso": "AI",
+      "name": {
+        "en": "Anguilla",
+        "pl": "Anguilla",
+        "de": "Anguilla",
+        "ja": "アンギラ",
+        "zh": "安圭拉"
+      },
+      "lat": 18.2206,
+      "lon": -63.0686,
+      "primary": "VP2E",
+      "prefixes": [
+        "VP2E"
+      ]
+    },
+    {
+      "iso": "AQ",
+      "name": {
+        "en": "Antarctica",
+        "pl": "Antarktyda",
+        "de": "Antarktis",
+        "ja": "南極",
+        "zh": "南极洲"
+      },
+      "lat": -77.8463,
+      "lon": 166.6682,
+      "primary": "VP8",
+      "prefixes": [
+        "VP8"
+      ]
+    },
+    {
+      "iso": "AR",
+      "name": {
+        "en": "Argentina",
+        "pl": "Argentyna",
+        "de": "Argentinien",
+        "ja": "アルゼンチン",
+        "zh": "阿根廷"
+      },
+      "lat": -34.6037,
+      "lon": -58.3816,
+      "primary": "LU",
+      "prefixes": [
+        "LU",
+        "AY",
+        "AZ",
+        "L",
+        "LQ",
+        "LR",
+        "LS",
+        "LT",
+        "LW"
+      ]
+    },
+    {
+      "iso": "AM",
+      "name": {
+        "en": "Armenia",
+        "pl": "Armenia",
+        "de": "Armenien",
+        "ja": "アルメニア",
+        "zh": "亚美尼亚"
+      },
+      "lat": 40.1792,
+      "lon": 44.4991,
+      "primary": "EK",
+      "prefixes": [
+        "EK"
+      ]
+    },
+    {
+      "iso": "AW",
+      "name": {
+        "en": "Aruba",
+        "pl": "Aruba",
+        "de": "Aruba",
+        "ja": "アルバ",
+        "zh": "阿鲁巴"
+      },
+      "lat": 12.5092,
+      "lon": -70.008,
+      "primary": "P4",
+      "prefixes": [
+        "P4"
+      ]
+    },
+    {
+      "iso": "AU",
+      "name": {
+        "en": "Australia",
+        "pl": "Australia",
+        "de": "Australien",
+        "ja": "オーストラリア",
+        "zh": "澳大利亚"
+      },
+      "lat": -35.2809,
+      "lon": 149.13,
+      "primary": "VK",
+      "prefixes": [
+        "VK",
+        "AX",
+        "VI",
+        "VH"
+      ]
+    },
+    {
+      "iso": "AT",
+      "name": {
+        "en": "Austria",
+        "pl": "Austria",
+        "de": "Österreich",
+        "ja": "オーストリア",
+        "zh": "奥地利"
+      },
+      "lat": 48.2082,
+      "lon": 16.3738,
+      "primary": "OE",
+      "prefixes": [
+        "OE"
+      ]
+    },
+    {
+      "iso": "AZ",
+      "name": {
+        "en": "Azerbaijan",
+        "pl": "Azerbejdżan",
+        "de": "Aserbaidschan",
+        "ja": "アゼルバイジャン",
+        "zh": "阿塞拜疆"
+      },
+      "lat": 40.4093,
+      "lon": 49.8671,
+      "primary": "4J",
+      "prefixes": [
+        "4J",
+        "4K"
+      ]
+    },
+    {
+      "iso": "BH",
+      "name": {
+        "en": "Bahrain",
+        "pl": "Bahrajn",
+        "de": "Bahrain",
+        "ja": "バーレーン",
+        "zh": "巴林"
+      },
+      "lat": 26.2285,
+      "lon": 50.586,
+      "primary": "A9",
+      "prefixes": [
+        "A9"
+      ]
+    },
+    {
+      "iso": "BD",
+      "name": {
+        "en": "Bangladesh",
+        "pl": "Bangladesz",
+        "de": "Bangladesch",
+        "ja": "バングラデシュ",
+        "zh": "孟加拉国"
+      },
+      "lat": 23.8103,
+      "lon": 90.4125,
+      "primary": "S2",
+      "prefixes": [
+        "S2"
+      ]
+    },
+    {
+      "iso": "BY",
+      "name": {
+        "en": "Belarus",
+        "pl": "Białoruś",
+        "de": "Belarus",
+        "ja": "ベラルーシ",
+        "zh": "白俄罗斯"
+      },
+      "lat": 53.9006,
+      "lon": 27.559,
+      "primary": "EU",
+      "prefixes": [
+        "EU",
+        "EV",
+        "EW"
+      ]
+    },
+    {
+      "iso": "BE",
+      "name": {
+        "en": "Belgium",
+        "pl": "Belgia",
+        "de": "Belgien",
+        "ja": "ベルギー",
+        "zh": "比利时"
+      },
+      "lat": 50.8503,
+      "lon": 4.3517,
+      "primary": "ON",
+      "prefixes": [
+        "ON",
+        "OO",
+        "OP",
+        "OQ",
+        "OR",
+        "OS",
+        "OT"
+      ]
+    },
+    {
+      "iso": "BZ",
+      "name": {
+        "en": "Belize",
+        "pl": "Belize",
+        "de": "Belize",
+        "ja": "ベリーズ",
+        "zh": "伯利兹"
+      },
+      "lat": 17.251,
+      "lon": -88.759,
+      "primary": "V3",
+      "prefixes": [
+        "V3"
+      ]
+    },
+    {
+      "iso": "BJ",
+      "name": {
+        "en": "Benin",
+        "pl": "Benin",
+        "de": "Benin",
+        "ja": "ベナン",
+        "zh": "贝宁"
+      },
+      "lat": 6.4969,
+      "lon": 2.6289,
+      "primary": "TY",
+      "prefixes": [
+        "TY"
+      ]
+    },
+    {
+      "iso": "BM",
+      "name": {
+        "en": "Bermuda",
+        "pl": "Bermudy",
+        "de": "Bermuda",
+        "ja": "バミューダ",
+        "zh": "百慕大"
+      },
+      "lat": 32.2942,
+      "lon": -64.7839,
+      "primary": "VP9",
+      "prefixes": [
+        "VP9"
+      ]
+    },
+    {
+      "iso": "BT",
+      "name": {
+        "en": "Bhutan",
+        "pl": "Bhutan",
+        "de": "Bhutan",
+        "ja": "ブータン",
+        "zh": "不丹"
+      },
+      "lat": 27.4712,
+      "lon": 89.6339,
+      "primary": "A5",
+      "prefixes": [
+        "A5"
+      ]
+    },
+    {
+      "iso": "BO",
+      "name": {
+        "en": "Bolivia",
+        "pl": "Boliwia",
+        "de": "Bolivien",
+        "ja": "ボリビア",
+        "zh": "玻利维亚"
+      },
+      "lat": -16.4897,
+      "lon": -68.1193,
+      "primary": "CP",
+      "prefixes": [
+        "CP"
+      ]
+    },
+    {
+      "iso": "BA",
+      "name": {
+        "en": "Bosnia and Herzegovina",
+        "pl": "Bośnia i Hercegowina",
+        "de": "Bosnien und Herzegowina",
+        "ja": "ボスニア・ヘルツェゴビナ",
+        "zh": "波斯尼亚和黑塞哥维那"
+      },
+      "lat": 43.8563,
+      "lon": 18.4131,
+      "primary": "E7",
+      "prefixes": [
+        "E7"
+      ]
+    },
+    {
+      "iso": "BW",
+      "name": {
+        "en": "Botswana",
+        "pl": "Botswana",
+        "de": "Botsuana",
+        "ja": "ボツワナ",
+        "zh": "博茨瓦纳"
+      },
+      "lat": -24.6282,
+      "lon": 25.9231,
+      "primary": "A2",
+      "prefixes": [
+        "A2",
+        "8O"
+      ]
+    },
+    {
+      "iso": "BR",
+      "name": {
+        "en": "Brazil",
+        "pl": "Brazylia",
+        "de": "Brasilien",
+        "ja": "ブラジル",
+        "zh": "巴西"
+      },
+      "lat": -15.7975,
+      "lon": -47.8919,
+      "primary": "PY",
+      "prefixes": [
+        "PY",
+        "PP",
+        "PQ",
+        "PR",
+        "PS",
+        "PT",
+        "PU",
+        "PV",
+        "PW",
+        "PX",
+        "ZV",
+        "ZW",
+        "ZX",
+        "ZY",
+        "ZZ"
+      ]
+    },
+    {
+      "iso": "IO",
+      "name": {
+        "en": "British Indian Ocean Territory",
+        "pl": "Brytyjskie Terytorium Oceanu Indyjskiego",
+        "de": "Britisches Territorium im Indischen Ozean",
+        "ja": "英領インド洋地域",
+        "zh": "英属印度洋领地"
+      },
+      "lat": -7.3195,
+      "lon": 72.4229,
+      "primary": "VQ9",
+      "prefixes": [
+        "VQ9"
+      ]
+    },
+    {
+      "iso": "VG",
+      "name": {
+        "en": "British Virgin Islands",
+        "pl": "Brytyjskie Wyspy Dziewicze",
+        "de": "Britische Jungferninseln",
+        "ja": "英領ヴァージン諸島",
+        "zh": "英属维尔京群岛"
+      },
+      "lat": 18.4286,
+      "lon": -64.6185,
+      "primary": "VP2V",
+      "prefixes": [
+        "VP2V"
+      ]
+    },
+    {
+      "iso": "BN",
+      "name": {
+        "en": "Brunei",
+        "pl": "Brunei",
+        "de": "Brunei",
+        "ja": "ブルネイ",
+        "zh": "文莱"
+      },
+      "lat": 4.9031,
+      "lon": 114.9398,
+      "primary": "V8",
+      "prefixes": [
+        "V8"
+      ]
+    },
+    {
+      "iso": "BG",
+      "name": {
+        "en": "Bulgaria",
+        "pl": "Bułgaria",
+        "de": "Bulgarien",
+        "ja": "ブルガリア",
+        "zh": "保加利亚"
+      },
+      "lat": 42.6977,
+      "lon": 23.3219,
+      "primary": "LZ",
+      "prefixes": [
+        "LZ"
+      ]
+    },
+    {
+      "iso": "BF",
+      "name": {
+        "en": "Burkina Faso",
+        "pl": "Burkina Faso",
+        "de": "Burkina Faso",
+        "ja": "ブルキナファソ",
+        "zh": "布基纳法索"
+      },
+      "lat": 12.3714,
+      "lon": -1.5197,
+      "primary": "XT",
+      "prefixes": [
+        "XT"
+      ]
+    },
+    {
+      "iso": "BI",
+      "name": {
+        "en": "Burundi",
+        "pl": "Burundi",
+        "de": "Burundi",
+        "ja": "ブルンジ",
+        "zh": "布隆迪"
+      },
+      "lat": -3.3731,
+      "lon": 29.9189,
+      "primary": "9U",
+      "prefixes": [
+        "9U"
+      ]
+    },
+    {
+      "iso": "CV",
+      "name": {
+        "en": "Cabo Verde",
+        "pl": "Republika Zielonego Przylądka",
+        "de": "Kap Verde",
+        "ja": "カーボベルデ",
+        "zh": "佛得角"
+      },
+      "lat": 14.933,
+      "lon": -23.5133,
+      "primary": "D4",
+      "prefixes": [
+        "D4"
+      ]
+    },
+    {
+      "iso": "KH",
+      "name": {
+        "en": "Cambodia",
+        "pl": "Kambodża",
+        "de": "Kambodscha",
+        "ja": "カンボジア",
+        "zh": "柬埔寨"
+      },
+      "lat": 11.5564,
+      "lon": 104.9282,
+      "primary": "XU",
+      "prefixes": [
+        "XU"
+      ]
+    },
+    {
+      "iso": "CM",
+      "name": {
+        "en": "Cameroon",
+        "pl": "Kamerun",
+        "de": "Kamerun",
+        "ja": "カメルーン",
+        "zh": "喀麦隆"
+      },
+      "lat": 3.848,
+      "lon": 11.5021,
+      "primary": "TJ",
+      "prefixes": [
+        "TJ"
+      ]
+    },
+    {
+      "iso": "CA",
+      "name": {
+        "en": "Canada",
+        "pl": "Kanada",
+        "de": "Kanada",
+        "ja": "カナダ",
+        "zh": "加拿大"
+      },
+      "lat": 45.4215,
+      "lon": -75.6972,
+      "primary": "VE",
+      "prefixes": [
+        "VE",
+        "VA",
+        "VO",
+        "VY",
+        "CF",
+        "CG",
+        "CH",
+        "CI",
+        "CJ",
+        "CK",
+        "CY",
+        "CZ",
+        "XJ",
+        "XK",
+        "XL",
+        "XM",
+        "XN",
+        "XO"
+      ]
+    },
+    {
+      "iso": "KY",
+      "name": {
+        "en": "Cayman Islands",
+        "pl": "Kajmany",
+        "de": "Kaimaninseln",
+        "ja": "ケイマン諸島",
+        "zh": "开曼群岛"
+      },
+      "lat": 19.2869,
+      "lon": -81.3674,
+      "primary": "ZF",
+      "prefixes": [
+        "ZF"
+      ]
+    },
+    {
+      "iso": "CF",
+      "name": {
+        "en": "Central African Republic",
+        "pl": "Republika Środkowoafrykańska",
+        "de": "Zentralafrikanische Republik",
+        "ja": "中央アフリカ共和国",
+        "zh": "中非共和国"
+      },
+      "lat": 4.3947,
+      "lon": 18.5582,
+      "primary": "TL",
+      "prefixes": [
+        "TL"
+      ]
+    },
+    {
+      "iso": "TD",
+      "name": {
+        "en": "Chad",
+        "pl": "Czad",
+        "de": "Tschad",
+        "ja": "チャド",
+        "zh": "乍得"
+      },
+      "lat": 12.1348,
+      "lon": 15.0557,
+      "primary": "TT",
+      "prefixes": [
+        "TT"
+      ]
+    },
+    {
+      "iso": "CL",
+      "name": {
+        "en": "Chile",
+        "pl": "Chile",
+        "de": "Chile",
+        "ja": "チリ",
+        "zh": "智利"
+      },
+      "lat": -33.4489,
+      "lon": -70.6693,
+      "primary": "CE",
+      "prefixes": [
+        "CE",
+        "CA",
+        "CB",
+        "CD",
+        "XQ",
+        "XR"
+      ]
+    },
+    {
+      "iso": "CN",
+      "name": {
+        "en": "China",
+        "pl": "Chiny",
+        "de": "China",
+        "ja": "中国",
+        "zh": "中国"
+      },
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "primary": "B",
+      "prefixes": [
+        "B",
+        "BA",
+        "BD",
+        "BG",
+        "BH",
+        "BI",
+        "BJ",
+        "BL",
+        "BM",
+        "BN",
+        "BO",
+        "BP",
+        "BQ",
+        "BS",
+        "BT",
+        "BU",
+        "BV",
+        "BW",
+        "BX",
+        "BY",
+        "BZ",
+        "XS",
+        "VR",
+        "XX"
+      ]
+    },
+    {
+      "iso": "CO",
+      "name": {
+        "en": "Colombia",
+        "pl": "Kolumbia",
+        "de": "Kolumbien",
+        "ja": "コロンビア",
+        "zh": "哥伦比亚"
+      },
+      "lat": 4.711,
+      "lon": -74.0721,
+      "primary": "HK",
+      "prefixes": [
+        "HK",
+        "5J",
+        "5K"
+      ]
+    },
+    {
+      "iso": "KM",
+      "name": {
+        "en": "Comoros",
+        "pl": "Komory",
+        "de": "Komoren",
+        "ja": "コモロ",
+        "zh": "科摩罗"
+      },
+      "lat": -11.7172,
+      "lon": 43.2473,
+      "primary": "D6",
+      "prefixes": [
+        "D6"
+      ]
+    },
+    {
+      "iso": "CK",
+      "name": {
+        "en": "Cook Islands",
+        "pl": "Wyspy Cooka",
+        "de": "Cookinseln",
+        "ja": "クック諸島",
+        "zh": "库克群岛"
+      },
+      "lat": -21.2367,
+      "lon": -159.7777,
+      "primary": "E5",
+      "prefixes": [
+        "E5"
+      ]
+    },
+    {
+      "iso": "CR",
+      "name": {
+        "en": "Costa Rica",
+        "pl": "Kostaryka",
+        "de": "Costa Rica",
+        "ja": "コスタリカ",
+        "zh": "哥斯达黎加"
+      },
+      "lat": 9.9281,
+      "lon": -84.0907,
+      "primary": "TI",
+      "prefixes": [
+        "TI",
+        "TE"
+      ]
+    },
+    {
+      "iso": "HR",
+      "name": {
+        "en": "Croatia",
+        "pl": "Chorwacja",
+        "de": "Kroatien",
+        "ja": "クロアチア",
+        "zh": "克罗地亚"
+      },
+      "lat": 45.815,
+      "lon": 15.9819,
+      "primary": "9A",
+      "prefixes": [
+        "9A"
+      ]
+    },
+    {
+      "iso": "CU",
+      "name": {
+        "en": "Cuba",
+        "pl": "Kuba",
+        "de": "Kuba",
+        "ja": "キューバ",
+        "zh": "古巴"
+      },
+      "lat": 23.1136,
+      "lon": -82.3666,
+      "primary": "CO",
+      "prefixes": [
+        "CO",
+        "CL",
+        "CM",
+        "T4"
+      ]
+    },
+    {
+      "iso": "CW",
+      "name": {
+        "en": "Curaçao",
+        "pl": "Curaçao",
+        "de": "Curaçao",
+        "ja": "キュラソー",
+        "zh": "库拉索"
+      },
+      "lat": 12.1224,
+      "lon": -68.8824,
+      "primary": "PJ2",
+      "prefixes": [
+        "PJ2"
+      ]
+    },
+    {
+      "iso": "CY",
+      "name": {
+        "en": "Cyprus",
+        "pl": "Cypr",
+        "de": "Zypern",
+        "ja": "キプロス",
+        "zh": "塞浦路斯"
+      },
+      "lat": 35.1856,
+      "lon": 33.3823,
+      "primary": "5B",
+      "prefixes": [
+        "5B",
+        "C4",
+        "H2",
+        "P3"
+      ]
+    },
+    {
+      "iso": "CZ",
+      "name": {
+        "en": "Czechia",
+        "pl": "Czechy",
+        "de": "Tschechien",
+        "ja": "チェコ",
+        "zh": "捷克"
+      },
+      "lat": 50.0755,
+      "lon": 14.4378,
+      "primary": "OK",
+      "prefixes": [
+        "OK",
+        "OL"
+      ]
+    },
+    {
+      "iso": "CD",
+      "name": {
+        "en": "DR Congo",
+        "pl": "DR Konga",
+        "de": "Demokratische Republik Kongo",
+        "ja": "コンゴ民主共和国",
+        "zh": "刚果民主共和国"
+      },
+      "lat": -4.4419,
+      "lon": 15.2663,
+      "primary": "9Q",
+      "prefixes": [
+        "9Q"
+      ]
+    },
+    {
+      "iso": "DK",
+      "name": {
+        "en": "Denmark",
+        "pl": "Dania",
+        "de": "Dänemark",
+        "ja": "デンマーク",
+        "zh": "丹麦"
+      },
+      "lat": 55.6761,
+      "lon": 12.5683,
+      "primary": "OZ",
+      "prefixes": [
+        "OZ",
+        "OU",
+        "OV",
+        "OW",
+        "OX",
+        "5P",
+        "5Q",
+        "XP"
+      ]
+    },
+    {
+      "iso": "DJ",
+      "name": {
+        "en": "Djibouti",
+        "pl": "Dżibuti",
+        "de": "Dschibuti",
+        "ja": "ジブチ",
+        "zh": "吉布提"
+      },
+      "lat": 11.5721,
+      "lon": 43.1456,
+      "primary": "J2",
+      "prefixes": [
+        "J2"
+      ]
+    },
+    {
+      "iso": "DO",
+      "name": {
+        "en": "Dominican Republic",
+        "pl": "Dominikana",
+        "de": "Dominikanische Republik",
+        "ja": "ドミニカ共和国",
+        "zh": "多米尼加共和国"
+      },
+      "lat": 18.4861,
+      "lon": -69.9312,
+      "primary": "HI",
+      "prefixes": [
+        "HI"
+      ]
+    },
+    {
+      "iso": "TL",
+      "name": {
+        "en": "Timor-Leste",
+        "pl": "Timor Wschodni",
+        "de": "Osttimor",
+        "ja": "東ティモール",
+        "zh": "东帝汶"
+      },
+      "lat": -8.5569,
+      "lon": 125.5603,
+      "primary": "4W",
+      "prefixes": [
+        "4W"
+      ]
+    },
+    {
+      "iso": "EC",
+      "name": {
+        "en": "Ecuador",
+        "pl": "Ekwador",
+        "de": "Ecuador",
+        "ja": "エクアドル",
+        "zh": "厄瓜多尔"
+      },
+      "lat": -0.1807,
+      "lon": -78.4678,
+      "primary": "HC",
+      "prefixes": [
+        "HC",
+        "HD"
+      ]
+    },
+    {
+      "iso": "EG",
+      "name": {
+        "en": "Egypt",
+        "pl": "Egipt",
+        "de": "Ägypten",
+        "ja": "エジプト",
+        "zh": "埃及"
+      },
+      "lat": 30.0444,
+      "lon": 31.2357,
+      "primary": "SU",
+      "prefixes": [
+        "SU",
+        "6A",
+        "6B"
+      ]
+    },
+    {
+      "iso": "SV",
+      "name": {
+        "en": "El Salvador",
+        "pl": "Salwador",
+        "de": "El Salvador",
+        "ja": "エルサルバドル",
+        "zh": "萨尔瓦多"
+      },
+      "lat": 13.6929,
+      "lon": -89.2182,
+      "primary": "YS",
+      "prefixes": [
+        "YS",
+        "HU"
+      ]
+    },
+    {
+      "iso": "GQ",
+      "name": {
+        "en": "Equatorial Guinea",
+        "pl": "Gwinea Równikowa",
+        "de": "Äquatorialguinea",
+        "ja": "赤道ギニア",
+        "zh": "赤道几内亚"
+      },
+      "lat": 3.7504,
+      "lon": 8.7371,
+      "primary": "3C",
+      "prefixes": [
+        "3C"
+      ]
+    },
+    {
+      "iso": "ER",
+      "name": {
+        "en": "Eritrea",
+        "pl": "Erytrea",
+        "de": "Eritrea",
+        "ja": "エリトリア",
+        "zh": "厄立特里亚"
+      },
+      "lat": 15.3229,
+      "lon": 38.9251,
+      "primary": "E3",
+      "prefixes": [
+        "E3"
+      ]
+    },
+    {
+      "iso": "EE",
+      "name": {
+        "en": "Estonia",
+        "pl": "Estonia",
+        "de": "Estland",
+        "ja": "エストニア",
+        "zh": "爱沙尼亚"
+      },
+      "lat": 59.437,
+      "lon": 24.7536,
+      "primary": "ES",
+      "prefixes": [
+        "ES"
+      ]
+    },
+    {
+      "iso": "ET",
+      "name": {
+        "en": "Ethiopia",
+        "pl": "Etiopia",
+        "de": "Äthiopien",
+        "ja": "エチオピア",
+        "zh": "埃塞俄比亚"
+      },
+      "lat": 9.032,
+      "lon": 38.7469,
+      "primary": "ET",
+      "prefixes": [
+        "ET",
+        "9E",
+        "9F"
+      ]
+    },
+    {
+      "iso": "FK",
+      "name": {
+        "en": "Falkland Islands",
+        "pl": "Falklandy",
+        "de": "Falklandinseln",
+        "ja": "フォークランド諸島",
+        "zh": "福克兰群岛"
+      },
+      "lat": -51.6973,
+      "lon": -57.8517,
+      "primary": "VP8",
+      "prefixes": [
+        "VP8"
+      ]
+    },
+    {
+      "iso": "FO",
+      "name": {
+        "en": "Faroe Islands",
+        "pl": "Wyspy Owcze",
+        "de": "Färöer",
+        "ja": "フェロー諸島",
+        "zh": "法罗群岛"
+      },
+      "lat": 62.0079,
+      "lon": -6.79,
+      "primary": "OY",
+      "prefixes": [
+        "OY"
+      ]
+    },
+    {
+      "iso": "FJ",
+      "name": {
+        "en": "Fiji",
+        "pl": "Fidżi",
+        "de": "Fidschi",
+        "ja": "フィジー",
+        "zh": "斐济"
+      },
+      "lat": -18.1416,
+      "lon": 178.4419,
+      "primary": "3D",
+      "prefixes": [
+        "3D"
+      ]
+    },
+    {
+      "iso": "FI",
+      "name": {
+        "en": "Finland",
+        "pl": "Finlandia",
+        "de": "Finnland",
+        "ja": "フィンランド",
+        "zh": "芬兰"
+      },
+      "lat": 60.1699,
+      "lon": 24.9384,
+      "primary": "OH",
+      "prefixes": [
+        "OH",
+        "OF",
+        "OG",
+        "OI",
+        "OJ"
+      ]
+    },
+    {
+      "iso": "FR",
+      "name": {
+        "en": "France",
+        "pl": "Francja",
+        "de": "Frankreich",
+        "ja": "フランス",
+        "zh": "法国"
+      },
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "primary": "F",
+      "prefixes": [
+        "F",
+        "FA",
+        "FB",
+        "FC",
+        "FD",
+        "FE",
+        "FF",
+        "FG",
+        "FH",
+        "FI",
+        "FJ",
+        "FK",
+        "FL",
+        "FM",
+        "FN",
+        "FO",
+        "FP",
+        "FQ",
+        "FR",
+        "FS",
+        "FT",
+        "FU",
+        "FV",
+        "FW",
+        "FX",
+        "FY",
+        "FZ",
+        "HW",
+        "HX",
+        "HY",
+        "TH",
+        "TM",
+        "TO",
+        "TP",
+        "TQ",
+        "TV",
+        "TW",
+        "TX"
+      ]
+    },
+    {
+      "iso": "PF",
+      "name": {
+        "en": "French Polynesia",
+        "pl": "Polinezja Francuska",
+        "de": "Französisch-Polynesien",
+        "ja": "仏領ポリネシア",
+        "zh": "法属波利尼西亚"
+      },
+      "lat": -17.5516,
+      "lon": -149.5585,
+      "primary": "FO",
+      "prefixes": [
+        "FO"
+      ]
+    },
+    {
+      "iso": "GA",
+      "name": {
+        "en": "Gabon",
+        "pl": "Gabon",
+        "de": "Gabun",
+        "ja": "ガボン",
+        "zh": "加蓬"
+      },
+      "lat": 0.4162,
+      "lon": 9.4673,
+      "primary": "TR",
+      "prefixes": [
+        "TR"
+      ]
+    },
+    {
+      "iso": "GM",
+      "name": {
+        "en": "Gambia",
+        "pl": "Gambia",
+        "de": "Gambia",
+        "ja": "ガンビア",
+        "zh": "冈比亚"
+      },
+      "lat": 13.4549,
+      "lon": -16.579,
+      "primary": "C5",
+      "prefixes": [
+        "C5"
+      ]
+    },
+    {
+      "iso": "GE",
+      "name": {
+        "en": "Georgia",
+        "pl": "Gruzja",
+        "de": "Georgien",
+        "ja": "ジョージア",
+        "zh": "格鲁吉亚"
+      },
+      "lat": 41.7151,
+      "lon": 44.8271,
+      "primary": "4L",
+      "prefixes": [
+        "4L"
+      ]
+    },
+    {
+      "iso": "DE",
+      "name": {
+        "en": "Germany",
+        "pl": "Niemcy",
+        "de": "Deutschland",
+        "ja": "ドイツ",
+        "zh": "德国"
+      },
+      "lat": 52.52,
+      "lon": 13.405,
+      "primary": "DL",
+      "prefixes": [
+        "DL",
+        "DA",
+        "DB",
+        "DC",
+        "DD",
+        "DE",
+        "DF",
+        "DG",
+        "DH",
+        "DI",
+        "DJ",
+        "DK",
+        "DM",
+        "DN",
+        "DO",
+        "DP",
+        "DQ",
+        "DR",
+        "Y2",
+        "Y3",
+        "Y4",
+        "Y5",
+        "Y6",
+        "Y7",
+        "Y8",
+        "Y9"
+      ]
+    },
+    {
+      "iso": "GH",
+      "name": {
+        "en": "Ghana",
+        "pl": "Ghana",
+        "de": "Ghana",
+        "ja": "ガーナ",
+        "zh": "加纳"
+      },
+      "lat": 5.6037,
+      "lon": -0.187,
+      "primary": "9G",
+      "prefixes": [
+        "9G"
+      ]
+    },
+    {
+      "iso": "GI",
+      "name": {
+        "en": "Gibraltar",
+        "pl": "Gibraltar",
+        "de": "Gibraltar",
+        "ja": "ジブラルタル",
+        "zh": "直布罗陀"
+      },
+      "lat": 36.1408,
+      "lon": -5.3536,
+      "primary": "ZB",
+      "prefixes": [
+        "ZB"
+      ]
+    },
+    {
+      "iso": "GR",
+      "name": {
+        "en": "Greece",
+        "pl": "Grecja",
+        "de": "Griechenland",
+        "ja": "ギリシャ",
+        "zh": "希腊"
+      },
+      "lat": 37.9838,
+      "lon": 23.7275,
+      "primary": "SV",
+      "prefixes": [
+        "SV",
+        "SW",
+        "SX",
+        "SY",
+        "SZ",
+        "J4"
+      ]
+    },
+    {
+      "iso": "GL",
+      "name": {
+        "en": "Greenland",
+        "pl": "Grenlandia",
+        "de": "Grönland",
+        "ja": "グリーンランド",
+        "zh": "格陵兰"
+      },
+      "lat": 64.1814,
+      "lon": -51.6941,
+      "primary": "OX",
+      "prefixes": [
+        "OX"
+      ]
+    },
+    {
+      "iso": "GD",
+      "name": {
+        "en": "Grenada",
+        "pl": "Grenada",
+        "de": "Grenada",
+        "ja": "グレナダ",
+        "zh": "格林纳达"
+      },
+      "lat": 12.0561,
+      "lon": -61.7486,
+      "primary": "J3",
+      "prefixes": [
+        "J3"
+      ]
+    },
+    {
+      "iso": "GU",
+      "name": {
+        "en": "Guam",
+        "pl": "Guam",
+        "de": "Guam",
+        "ja": "グアム",
+        "zh": "关岛"
+      },
+      "lat": 13.475,
+      "lon": 144.75,
+      "primary": "KH2",
+      "prefixes": [
+        "KH2"
+      ]
+    },
+    {
+      "iso": "GT",
+      "name": {
+        "en": "Guatemala",
+        "pl": "Gwatemala",
+        "de": "Guatemala",
+        "ja": "グアテマラ",
+        "zh": "危地马拉"
+      },
+      "lat": 14.6349,
+      "lon": -90.5069,
+      "primary": "TG",
+      "prefixes": [
+        "TG",
+        "TD"
+      ]
+    },
+    {
+      "iso": "GG",
+      "name": {
+        "en": "Guernsey",
+        "pl": "Guernsey",
+        "de": "Guernsey",
+        "ja": "ガーンジー",
+        "zh": "根西岛"
+      },
+      "lat": 49.4542,
+      "lon": -2.5367,
+      "primary": "GU",
+      "prefixes": [
+        "GU",
+        "MU",
+        "2U"
+      ]
+    },
+    {
+      "iso": "GN",
+      "name": {
+        "en": "Guinea",
+        "pl": "Gwinea",
+        "de": "Guinea",
+        "ja": "ギニア",
+        "zh": "几内亚"
+      },
+      "lat": 9.6412,
+      "lon": -13.5784,
+      "primary": "3X",
+      "prefixes": [
+        "3X"
+      ]
+    },
+    {
+      "iso": "GW",
+      "name": {
+        "en": "Guinea-Bissau",
+        "pl": "Gwinea Bissau",
+        "de": "Guinea-Bissau",
+        "ja": "ギニアビサウ",
+        "zh": "几内亚比绍"
+      },
+      "lat": 11.8817,
+      "lon": -15.6177,
+      "primary": "J5",
+      "prefixes": [
+        "J5"
+      ]
+    },
+    {
+      "iso": "GY",
+      "name": {
+        "en": "Guyana",
+        "pl": "Gujana",
+        "de": "Guyana",
+        "ja": "ガイアナ",
+        "zh": "圭亚那"
+      },
+      "lat": 6.8013,
+      "lon": -58.1551,
+      "primary": "8R",
+      "prefixes": [
+        "8R"
+      ]
+    },
+    {
+      "iso": "HT",
+      "name": {
+        "en": "Haiti",
+        "pl": "Haiti",
+        "de": "Haiti",
+        "ja": "ハイチ",
+        "zh": "海地"
+      },
+      "lat": 18.5944,
+      "lon": -72.3074,
+      "primary": "HH",
+      "prefixes": [
+        "HH",
+        "4V"
+      ]
+    },
+    {
+      "iso": "HN",
+      "name": {
+        "en": "Honduras",
+        "pl": "Honduras",
+        "de": "Honduras",
+        "ja": "ホンジュラス",
+        "zh": "洪都拉斯"
+      },
+      "lat": 14.0723,
+      "lon": -87.1921,
+      "primary": "HR",
+      "prefixes": [
+        "HR"
+      ]
+    },
+    {
+      "iso": "HK",
+      "name": {
+        "en": "Hong Kong",
+        "pl": "Hongkong",
+        "de": "Hongkong",
+        "ja": "香港",
+        "zh": "香港"
+      },
+      "lat": 22.3193,
+      "lon": 114.1694,
+      "primary": "VR2",
+      "prefixes": [
+        "VR2"
+      ]
+    },
+    {
+      "iso": "HU",
+      "name": {
+        "en": "Hungary",
+        "pl": "Węgry",
+        "de": "Ungarn",
+        "ja": "ハンガリー",
+        "zh": "匈牙利"
+      },
+      "lat": 47.4979,
+      "lon": 19.0402,
+      "primary": "HA",
+      "prefixes": [
+        "HA",
+        "HG"
+      ]
+    },
+    {
+      "iso": "IS",
+      "name": {
+        "en": "Iceland",
+        "pl": "Islandia",
+        "de": "Island",
+        "ja": "アイスランド",
+        "zh": "冰岛"
+      },
+      "lat": 64.1466,
+      "lon": -21.9426,
+      "primary": "TF",
+      "prefixes": [
+        "TF"
+      ]
+    },
+    {
+      "iso": "IN",
+      "name": {
+        "en": "India",
+        "pl": "Indie",
+        "de": "Indien",
+        "ja": "インド",
+        "zh": "印度"
+      },
+      "lat": 28.6139,
+      "lon": 77.209,
+      "primary": "VU",
+      "prefixes": [
+        "VU",
+        "AT",
+        "AU",
+        "AV",
+        "AW",
+        "VT",
+        "VW",
+        "8T",
+        "8U",
+        "8V",
+        "8W",
+        "8X",
+        "8Y"
+      ]
+    },
+    {
+      "iso": "ID",
+      "name": {
+        "en": "Indonesia",
+        "pl": "Indonezja",
+        "de": "Indonesien",
+        "ja": "インドネシア",
+        "zh": "印度尼西亚"
+      },
+      "lat": -6.2088,
+      "lon": 106.8456,
+      "primary": "YB",
+      "prefixes": [
+        "YB",
+        "YE",
+        "YF",
+        "YG",
+        "YH",
+        "7A",
+        "7B",
+        "7C",
+        "7D",
+        "7E",
+        "7F",
+        "7G",
+        "7H",
+        "7I",
+        "8A",
+        "8B",
+        "8C",
+        "8D",
+        "8E",
+        "8F",
+        "8G",
+        "8H",
+        "8I",
+        "PK",
+        "PL",
+        "PM",
+        "PN",
+        "PO"
+      ]
+    },
+    {
+      "iso": "IR",
+      "name": {
+        "en": "Iran",
+        "pl": "Iran",
+        "de": "Iran",
+        "ja": "イラン",
+        "zh": "伊朗"
+      },
+      "lat": 35.6892,
+      "lon": 51.389,
+      "primary": "EP",
+      "prefixes": [
+        "EP",
+        "EQ",
+        "9B",
+        "9C",
+        "9D"
+      ]
+    },
+    {
+      "iso": "IQ",
+      "name": {
+        "en": "Iraq",
+        "pl": "Irak",
+        "de": "Irak",
+        "ja": "イラク",
+        "zh": "伊拉克"
+      },
+      "lat": 33.3152,
+      "lon": 44.3661,
+      "primary": "YI",
+      "prefixes": [
+        "YI",
+        "HN"
+      ]
+    },
+    {
+      "iso": "IE",
+      "name": {
+        "en": "Ireland",
+        "pl": "Irlandia",
+        "de": "Irland",
+        "ja": "アイルランド",
+        "zh": "爱尔兰"
+      },
+      "lat": 53.3498,
+      "lon": -6.2603,
+      "primary": "EI",
+      "prefixes": [
+        "EI",
+        "EJ"
+      ]
+    },
+    {
+      "iso": "IM",
+      "name": {
+        "en": "Isle of Man",
+        "pl": "Wyspa Man",
+        "de": "Isle of Man",
+        "ja": "マン島",
+        "zh": "马恩岛"
+      },
+      "lat": 54.1523,
+      "lon": -4.4861,
+      "primary": "GD",
+      "prefixes": [
+        "GD",
+        "MD",
+        "2D"
+      ]
+    },
+    {
+      "iso": "IL",
+      "name": {
+        "en": "Israel",
+        "pl": "Izrael",
+        "de": "Israel",
+        "ja": "イスラエル",
+        "zh": "以色列"
+      },
+      "lat": 31.7683,
+      "lon": 35.2137,
+      "primary": "4X",
+      "prefixes": [
+        "4X",
+        "4Z"
+      ]
+    },
+    {
+      "iso": "IT",
+      "name": {
+        "en": "Italy",
+        "pl": "Włochy",
+        "de": "Italien",
+        "ja": "イタリア",
+        "zh": "意大利"
+      },
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "primary": "I",
+      "prefixes": [
+        "I",
+        "IA",
+        "IB",
+        "IC",
+        "ID",
+        "IE",
+        "IF",
+        "IG",
+        "IH",
+        "II",
+        "IJ",
+        "IK",
+        "IL",
+        "IM",
+        "IN",
+        "IO",
+        "IP",
+        "IQ",
+        "IR",
+        "IS",
+        "IT",
+        "IU",
+        "IV",
+        "IW",
+        "IX",
+        "IY",
+        "IZ"
+      ]
+    },
+    {
+      "iso": "CI",
+      "name": {
+        "en": "Côte d'Ivoire",
+        "pl": "Wybrzeże Kości Słoniowej",
+        "de": "Elfenbeinküste",
+        "ja": "コートジボワール",
+        "zh": "科特迪瓦"
+      },
+      "lat": 6.8276,
+      "lon": -5.2893,
+      "primary": "TU",
+      "prefixes": [
+        "TU"
+      ]
+    },
+    {
+      "iso": "JM",
+      "name": {
+        "en": "Jamaica",
+        "pl": "Jamajka",
+        "de": "Jamaika",
+        "ja": "ジャマイカ",
+        "zh": "牙买加"
+      },
+      "lat": 18.0179,
+      "lon": -76.8099,
+      "primary": "6Y",
+      "prefixes": [
+        "6Y"
+      ]
+    },
+    {
+      "iso": "JP",
+      "name": {
+        "en": "Japan",
+        "pl": "Japonia",
+        "de": "Japan",
+        "ja": "日本",
+        "zh": "日本"
+      },
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "primary": "JA",
+      "prefixes": [
+        "JA",
+        "JB",
+        "JC",
+        "JD",
+        "JE",
+        "JF",
+        "JG",
+        "JH",
+        "JI",
+        "JJ",
+        "JK",
+        "JL",
+        "JM",
+        "JN",
+        "JO",
+        "JP",
+        "JQ",
+        "JR",
+        "JS",
+        "7J",
+        "7K",
+        "7L",
+        "7M",
+        "7N",
+        "8J",
+        "8K",
+        "8L",
+        "8M",
+        "8N"
+      ]
+    },
+    {
+      "iso": "JE",
+      "name": {
+        "en": "Jersey",
+        "pl": "Jersey",
+        "de": "Jersey",
+        "ja": "ジャージー",
+        "zh": "泽西岛"
+      },
+      "lat": 49.188,
+      "lon": -2.1049,
+      "primary": "GJ",
+      "prefixes": [
+        "GJ",
+        "MJ",
+        "2J"
+      ]
+    },
+    {
+      "iso": "JO",
+      "name": {
+        "en": "Jordan",
+        "pl": "Jordania",
+        "de": "Jordanien",
+        "ja": "ヨルダン",
+        "zh": "约旦"
+      },
+      "lat": 31.9454,
+      "lon": 35.9284,
+      "primary": "JY",
+      "prefixes": [
+        "JY"
+      ]
+    },
+    {
+      "iso": "KZ",
+      "name": {
+        "en": "Kazakhstan",
+        "pl": "Kazachstan",
+        "de": "Kasachstan",
+        "ja": "カザフスタン",
+        "zh": "哈萨克斯坦"
+      },
+      "lat": 51.1694,
+      "lon": 71.4491,
+      "primary": "UN",
+      "prefixes": [
+        "UN",
+        "UO",
+        "UP",
+        "UQ",
+        "UL"
+      ]
+    },
+    {
+      "iso": "KE",
+      "name": {
+        "en": "Kenya",
+        "pl": "Kenia",
+        "de": "Kenia",
+        "ja": "ケニア",
+        "zh": "肯尼亚"
+      },
+      "lat": -1.2921,
+      "lon": 36.8219,
+      "primary": "5Z",
+      "prefixes": [
+        "5Y",
+        "5Z"
+      ]
+    },
+    {
+      "iso": "KI",
+      "name": {
+        "en": "Kiribati",
+        "pl": "Kiribati",
+        "de": "Kiribati",
+        "ja": "キリバス",
+        "zh": "基里巴斯"
+      },
+      "lat": 1.3292,
+      "lon": 172.978,
+      "primary": "T3",
+      "prefixes": [
+        "T3"
+      ]
+    },
+    {
+      "iso": "XK",
+      "name": {
+        "en": "Kosovo",
+        "pl": "Kosowo",
+        "de": "Kosovo",
+        "ja": "コソボ",
+        "zh": "科索沃"
+      },
+      "lat": 42.6629,
+      "lon": 21.1655,
+      "primary": "Z6",
+      "prefixes": [
+        "Z6"
+      ]
+    },
+    {
+      "iso": "KW",
+      "name": {
+        "en": "Kuwait",
+        "pl": "Kuwejt",
+        "de": "Kuwait",
+        "ja": "クウェート",
+        "zh": "科威特"
+      },
+      "lat": 29.3759,
+      "lon": 47.9774,
+      "primary": "9K",
+      "prefixes": [
+        "9K"
+      ]
+    },
+    {
+      "iso": "KG",
+      "name": {
+        "en": "Kyrgyzstan",
+        "pl": "Kirgistan",
+        "de": "Kirgisistan",
+        "ja": "キルギス",
+        "zh": "吉尔吉斯斯坦"
+      },
+      "lat": 42.8746,
+      "lon": 74.5698,
+      "primary": "EX",
+      "prefixes": [
+        "EX"
+      ]
+    },
+    {
+      "iso": "LA",
+      "name": {
+        "en": "Laos",
+        "pl": "Laos",
+        "de": "Laos",
+        "ja": "ラオス",
+        "zh": "老挝"
+      },
+      "lat": 17.9757,
+      "lon": 102.6331,
+      "primary": "XW",
+      "prefixes": [
+        "XW"
+      ]
+    },
+    {
+      "iso": "LV",
+      "name": {
+        "en": "Latvia",
+        "pl": "Łotwa",
+        "de": "Lettland",
+        "ja": "ラトビア",
+        "zh": "拉脱维亚"
+      },
+      "lat": 56.9496,
+      "lon": 24.1052,
+      "primary": "YL",
+      "prefixes": [
+        "YL"
+      ]
+    },
+    {
+      "iso": "LB",
+      "name": {
+        "en": "Lebanon",
+        "pl": "Liban",
+        "de": "Libanon",
+        "ja": "レバノン",
+        "zh": "黎巴嫩"
+      },
+      "lat": 33.8938,
+      "lon": 35.5018,
+      "primary": "OD",
+      "prefixes": [
+        "OD"
+      ]
+    },
+    {
+      "iso": "LS",
+      "name": {
+        "en": "Lesotho",
+        "pl": "Lesotho",
+        "de": "Lesotho",
+        "ja": "レソト",
+        "zh": "莱索托"
+      },
+      "lat": -29.3151,
+      "lon": 27.4869,
+      "primary": "7P",
+      "prefixes": [
+        "7P"
+      ]
+    },
+    {
+      "iso": "LR",
+      "name": {
+        "en": "Liberia",
+        "pl": "Liberia",
+        "de": "Liberia",
+        "ja": "リベリア",
+        "zh": "利比里亚"
+      },
+      "lat": 6.2907,
+      "lon": -10.7605,
+      "primary": "EL",
+      "prefixes": [
+        "EL",
+        "A8",
+        "D5",
+        "5L",
+        "5M",
+        "6Z"
+      ]
+    },
+    {
+      "iso": "LY",
+      "name": {
+        "en": "Libya",
+        "pl": "Libia",
+        "de": "Libyen",
+        "ja": "リビア",
+        "zh": "利比亚"
+      },
+      "lat": 32.8872,
+      "lon": 13.1913,
+      "primary": "5A",
+      "prefixes": [
+        "5A"
+      ]
+    },
+    {
+      "iso": "LI",
+      "name": {
+        "en": "Liechtenstein",
+        "pl": "Liechtenstein",
+        "de": "Liechtenstein",
+        "ja": "リヒテンシュタイン",
+        "zh": "列支敦士登"
+      },
+      "lat": 47.141,
+      "lon": 9.5209,
+      "primary": "HB0",
+      "prefixes": [
+        "HB0"
+      ]
+    },
+    {
+      "iso": "LT",
+      "name": {
+        "en": "Lithuania",
+        "pl": "Litwa",
+        "de": "Litauen",
+        "ja": "リトアニア",
+        "zh": "立陶宛"
+      },
+      "lat": 54.6872,
+      "lon": 25.2797,
+      "primary": "LY",
+      "prefixes": [
+        "LY"
+      ]
+    },
+    {
+      "iso": "LU",
+      "name": {
+        "en": "Luxembourg",
+        "pl": "Luksemburg",
+        "de": "Luxemburg",
+        "ja": "ルクセンブルク",
+        "zh": "卢森堡"
+      },
+      "lat": 49.6116,
+      "lon": 6.1319,
+      "primary": "LX",
+      "prefixes": [
+        "LX"
+      ]
+    },
+    {
+      "iso": "MO",
+      "name": {
+        "en": "Macao",
+        "pl": "Makau",
+        "de": "Macau",
+        "ja": "マカオ",
+        "zh": "澳门"
+      },
+      "lat": 22.1987,
+      "lon": 113.5439,
+      "primary": "XX9",
+      "prefixes": [
+        "XX9"
+      ]
+    },
+    {
+      "iso": "MG",
+      "name": {
+        "en": "Madagascar",
+        "pl": "Madagaskar",
+        "de": "Madagaskar",
+        "ja": "マダガスカル",
+        "zh": "马达加斯加"
+      },
+      "lat": -18.8792,
+      "lon": 47.5079,
+      "primary": "5R",
+      "prefixes": [
+        "5R",
+        "5S",
+        "6X"
+      ]
+    },
+    {
+      "iso": "MW",
+      "name": {
+        "en": "Malawi",
+        "pl": "Malawi",
+        "de": "Malawi",
+        "ja": "マラウイ",
+        "zh": "马拉维"
+      },
+      "lat": -13.9626,
+      "lon": 33.7741,
+      "primary": "7Q",
+      "prefixes": [
+        "7Q"
+      ]
+    },
+    {
+      "iso": "MY",
+      "name": {
+        "en": "Malaysia",
+        "pl": "Malezja",
+        "de": "Malaysia",
+        "ja": "マレーシア",
+        "zh": "马来西亚"
+      },
+      "lat": 3.139,
+      "lon": 101.6869,
+      "primary": "9M",
+      "prefixes": [
+        "9M",
+        "9W"
+      ]
+    },
+    {
+      "iso": "MV",
+      "name": {
+        "en": "Maldives",
+        "pl": "Malediwy",
+        "de": "Malediven",
+        "ja": "モルディブ",
+        "zh": "马尔代夫"
+      },
+      "lat": 4.1755,
+      "lon": 73.5093,
+      "primary": "8Q",
+      "prefixes": [
+        "8Q"
+      ]
+    },
+    {
+      "iso": "ML",
+      "name": {
+        "en": "Mali",
+        "pl": "Mali",
+        "de": "Mali",
+        "ja": "マリ",
+        "zh": "马里"
+      },
+      "lat": 12.6392,
+      "lon": -8.0029,
+      "primary": "TZ",
+      "prefixes": [
+        "TZ"
+      ]
+    },
+    {
+      "iso": "MT",
+      "name": {
+        "en": "Malta",
+        "pl": "Malta",
+        "de": "Malta",
+        "ja": "マルタ",
+        "zh": "马耳他"
+      },
+      "lat": 35.8989,
+      "lon": 14.5146,
+      "primary": "9H",
+      "prefixes": [
+        "9H"
+      ]
+    },
+    {
+      "iso": "MH",
+      "name": {
+        "en": "Marshall Islands",
+        "pl": "Wyspy Marshalla",
+        "de": "Marshallinseln",
+        "ja": "マーシャル諸島",
+        "zh": "马绍尔群岛"
+      },
+      "lat": 7.1164,
+      "lon": 171.1856,
+      "primary": "V7",
+      "prefixes": [
+        "V7"
+      ]
+    },
+    {
+      "iso": "MR",
+      "name": {
+        "en": "Mauritania",
+        "pl": "Mauretania",
+        "de": "Mauretanien",
+        "ja": "モーリタニア",
+        "zh": "毛里塔尼亚"
+      },
+      "lat": 18.0735,
+      "lon": -15.9582,
+      "primary": "5T",
+      "prefixes": [
+        "5T"
+      ]
+    },
+    {
+      "iso": "MU",
+      "name": {
+        "en": "Mauritius",
+        "pl": "Mauritius",
+        "de": "Mauritius",
+        "ja": "モーリシャス",
+        "zh": "毛里求斯"
+      },
+      "lat": -20.1609,
+      "lon": 57.5012,
+      "primary": "3B",
+      "prefixes": [
+        "3B"
+      ]
+    },
+    {
+      "iso": "MX",
+      "name": {
+        "en": "Mexico",
+        "pl": "Meksyk",
+        "de": "Mexiko",
+        "ja": "メキシコ",
+        "zh": "墨西哥"
+      },
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "primary": "XE",
+      "prefixes": [
+        "XE",
+        "XA",
+        "XB",
+        "XC",
+        "XD",
+        "XF",
+        "XG",
+        "XH",
+        "XI",
+        "4A",
+        "4B",
+        "4C",
+        "6D",
+        "6E",
+        "6F",
+        "6G",
+        "6H",
+        "6I",
+        "6J"
+      ]
+    },
+    {
+      "iso": "MD",
+      "name": {
+        "en": "Moldova",
+        "pl": "Mołdawia",
+        "de": "Moldau",
+        "ja": "モルドバ",
+        "zh": "摩尔多瓦"
+      },
+      "lat": 47.0105,
+      "lon": 28.8638,
+      "primary": "ER",
+      "prefixes": [
+        "ER"
+      ]
+    },
+    {
+      "iso": "MC",
+      "name": {
+        "en": "Monaco",
+        "pl": "Monako",
+        "de": "Monaco",
+        "ja": "モナコ",
+        "zh": "摩纳哥"
+      },
+      "lat": 43.7384,
+      "lon": 7.4246,
+      "primary": "3A",
+      "prefixes": [
+        "3A"
+      ]
+    },
+    {
+      "iso": "MN",
+      "name": {
+        "en": "Mongolia",
+        "pl": "Mongolia",
+        "de": "Mongolei",
+        "ja": "モンゴル",
+        "zh": "蒙古"
+      },
+      "lat": 47.8864,
+      "lon": 106.9057,
+      "primary": "JT",
+      "prefixes": [
+        "JT",
+        "JU",
+        "JV"
+      ]
+    },
+    {
+      "iso": "ME",
+      "name": {
+        "en": "Montenegro",
+        "pl": "Czarnogóra",
+        "de": "Montenegro",
+        "ja": "モンテネグロ",
+        "zh": "黑山"
+      },
+      "lat": 42.4304,
+      "lon": 19.2594,
+      "primary": "4O",
+      "prefixes": [
+        "4O"
+      ]
+    },
+    {
+      "iso": "MS",
+      "name": {
+        "en": "Montserrat",
+        "pl": "Montserrat",
+        "de": "Montserrat",
+        "ja": "モントセラト",
+        "zh": "蒙特塞拉特"
+      },
+      "lat": 16.7425,
+      "lon": -62.1874,
+      "primary": "VP2M",
+      "prefixes": [
+        "VP2M"
+      ]
+    },
+    {
+      "iso": "MA",
+      "name": {
+        "en": "Morocco",
+        "pl": "Maroko",
+        "de": "Marokko",
+        "ja": "モロッコ",
+        "zh": "摩洛哥"
+      },
+      "lat": 33.9716,
+      "lon": -6.8498,
+      "primary": "CN",
+      "prefixes": [
+        "CN",
+        "5C",
+        "5D",
+        "5E",
+        "5F",
+        "5G"
+      ]
+    },
+    {
+      "iso": "MZ",
+      "name": {
+        "en": "Mozambique",
+        "pl": "Mozambik",
+        "de": "Mosambik",
+        "ja": "モザンビーク",
+        "zh": "莫桑比克"
+      },
+      "lat": -25.9692,
+      "lon": 32.5732,
+      "primary": "C9",
+      "prefixes": [
+        "C9"
+      ]
+    },
+    {
+      "iso": "MM",
+      "name": {
+        "en": "Myanmar",
+        "pl": "Mjanma",
+        "de": "Myanmar",
+        "ja": "ミャンマー",
+        "zh": "缅甸"
+      },
+      "lat": 19.7633,
+      "lon": 96.0785,
+      "primary": "XY",
+      "prefixes": [
+        "XY",
+        "XZ"
+      ]
+    },
+    {
+      "iso": "NA",
+      "name": {
+        "en": "Namibia",
+        "pl": "Namibia",
+        "de": "Namibia",
+        "ja": "ナミビア",
+        "zh": "纳米比亚"
+      },
+      "lat": -22.5609,
+      "lon": 17.0658,
+      "primary": "V5",
+      "prefixes": [
+        "V5"
+      ]
+    },
+    {
+      "iso": "NP",
+      "name": {
+        "en": "Nepal",
+        "pl": "Nepal",
+        "de": "Nepal",
+        "ja": "ネパール",
+        "zh": "尼泊尔"
+      },
+      "lat": 27.7172,
+      "lon": 85.324,
+      "primary": "9N",
+      "prefixes": [
+        "9N"
+      ]
+    },
+    {
+      "iso": "NL",
+      "name": {
+        "en": "Netherlands",
+        "pl": "Holandia",
+        "de": "Niederlande",
+        "ja": "オランダ",
+        "zh": "荷兰"
+      },
+      "lat": 52.3676,
+      "lon": 4.9041,
+      "primary": "PA",
+      "prefixes": [
+        "PA",
+        "PB",
+        "PC",
+        "PD",
+        "PE",
+        "PF",
+        "PG",
+        "PH",
+        "PI",
+        "PJ"
+      ]
+    },
+    {
+      "iso": "NC",
+      "name": {
+        "en": "New Caledonia",
+        "pl": "Nowa Kaledonia",
+        "de": "Neukaledonien",
+        "ja": "ニューカレドニア",
+        "zh": "新喀里多尼亚"
+      },
+      "lat": -22.2758,
+      "lon": 166.458,
+      "primary": "FK",
+      "prefixes": [
+        "FK"
+      ]
+    },
+    {
+      "iso": "NZ",
+      "name": {
+        "en": "New Zealand",
+        "pl": "Nowa Zelandia",
+        "de": "Neuseeland",
+        "ja": "ニュージーランド",
+        "zh": "新西兰"
+      },
+      "lat": -41.2865,
+      "lon": 174.7762,
+      "primary": "ZL",
+      "prefixes": [
+        "ZL",
+        "ZM",
+        "ZK"
+      ]
+    },
+    {
+      "iso": "NI",
+      "name": {
+        "en": "Nicaragua",
+        "pl": "Nikaragua",
+        "de": "Nicaragua",
+        "ja": "ニカラグア",
+        "zh": "尼加拉瓜"
+      },
+      "lat": 12.114,
+      "lon": -86.2362,
+      "primary": "YN",
+      "prefixes": [
+        "YN",
+        "HT"
+      ]
+    },
+    {
+      "iso": "NE",
+      "name": {
+        "en": "Niger",
+        "pl": "Niger",
+        "de": "Niger",
+        "ja": "ニジェール",
+        "zh": "尼日尔"
+      },
+      "lat": 13.5116,
+      "lon": 2.1254,
+      "primary": "5U",
+      "prefixes": [
+        "5U"
+      ]
+    },
+    {
+      "iso": "NG",
+      "name": {
+        "en": "Nigeria",
+        "pl": "Nigeria",
+        "de": "Nigeria",
+        "ja": "ナイジェリア",
+        "zh": "尼日利亚"
+      },
+      "lat": 9.0765,
+      "lon": 7.3986,
+      "primary": "5N",
+      "prefixes": [
+        "5N",
+        "5O"
+      ]
+    },
+    {
+      "iso": "KP",
+      "name": {
+        "en": "North Korea",
+        "pl": "Korea Północna",
+        "de": "Nordkorea",
+        "ja": "北朝鮮",
+        "zh": "朝鲜"
+      },
+      "lat": 39.0392,
+      "lon": 125.7625,
+      "primary": "P5",
+      "prefixes": [
+        "P5"
+      ]
+    },
+    {
+      "iso": "MK",
+      "name": {
+        "en": "North Macedonia",
+        "pl": "Macedonia Północna",
+        "de": "Nordmazedonien",
+        "ja": "北マケドニア",
+        "zh": "北马其顿"
+      },
+      "lat": 41.9981,
+      "lon": 21.4254,
+      "primary": "Z3",
+      "prefixes": [
+        "Z3"
+      ]
+    },
+    {
+      "iso": "MP",
+      "name": {
+        "en": "Northern Mariana Islands",
+        "pl": "Mariany Północne",
+        "de": "Nördliche Marianen",
+        "ja": "北マリアナ諸島",
+        "zh": "北马里亚纳群岛"
+      },
+      "lat": 15.1851,
+      "lon": 145.7467,
+      "primary": "KH0",
+      "prefixes": [
+        "KH0"
+      ]
+    },
+    {
+      "iso": "NO",
+      "name": {
+        "en": "Norway",
+        "pl": "Norwegia",
+        "de": "Norwegen",
+        "ja": "ノルウェー",
+        "zh": "挪威"
+      },
+      "lat": 59.9139,
+      "lon": 10.7522,
+      "primary": "LA",
+      "prefixes": [
+        "LA",
+        "LB",
+        "LC",
+        "LD",
+        "LE",
+        "LF",
+        "LG",
+        "LH",
+        "LI",
+        "LJ",
+        "LK",
+        "LL",
+        "LM",
+        "LN",
+        "JW",
+        "JX",
+        "3Y"
+      ]
+    },
+    {
+      "iso": "OM",
+      "name": {
+        "en": "Oman",
+        "pl": "Oman",
+        "de": "Oman",
+        "ja": "オマーン",
+        "zh": "阿曼"
+      },
+      "lat": 23.588,
+      "lon": 58.3829,
+      "primary": "A4",
+      "prefixes": [
+        "A4"
+      ]
+    },
+    {
+      "iso": "PK",
+      "name": {
+        "en": "Pakistan",
+        "pl": "Pakistan",
+        "de": "Pakistan",
+        "ja": "パキスタン",
+        "zh": "巴基斯坦"
+      },
+      "lat": 33.6844,
+      "lon": 73.0479,
+      "primary": "AP",
+      "prefixes": [
+        "AP",
+        "6P",
+        "6Q",
+        "6R",
+        "6S"
+      ]
+    },
+    {
+      "iso": "PW",
+      "name": {
+        "en": "Palau",
+        "pl": "Palau",
+        "de": "Palau",
+        "ja": "パラオ",
+        "zh": "帕劳"
+      },
+      "lat": 7.5,
+      "lon": 134.624,
+      "primary": "T8",
+      "prefixes": [
+        "T8"
+      ]
+    },
+    {
+      "iso": "PS",
+      "name": {
+        "en": "Palestine",
+        "pl": "Palestyna",
+        "de": "Palästina",
+        "ja": "パレスチナ",
+        "zh": "巴勒斯坦"
+      },
+      "lat": 31.9038,
+      "lon": 35.2034,
+      "primary": "E4",
+      "prefixes": [
+        "E4"
+      ]
+    },
+    {
+      "iso": "PA",
+      "name": {
+        "en": "Panama",
+        "pl": "Panama",
+        "de": "Panama",
+        "ja": "パナマ",
+        "zh": "巴拿马"
+      },
+      "lat": 8.9824,
+      "lon": -79.5199,
+      "primary": "HP",
+      "prefixes": [
+        "HP",
+        "HO",
+        "3E",
+        "3F"
+      ]
+    },
+    {
+      "iso": "PG",
+      "name": {
+        "en": "Papua New Guinea",
+        "pl": "Papua-Nowa Gwinea",
+        "de": "Papua-Neuguinea",
+        "ja": "パプアニューギニア",
+        "zh": "巴布亚新几内亚"
+      },
+      "lat": -9.4438,
+      "lon": 147.1803,
+      "primary": "P2",
+      "prefixes": [
+        "P2"
+      ]
+    },
+    {
+      "iso": "PY",
+      "name": {
+        "en": "Paraguay",
+        "pl": "Paragwaj",
+        "de": "Paraguay",
+        "ja": "パラグアイ",
+        "zh": "巴拉圭"
+      },
+      "lat": -25.2637,
+      "lon": -57.5759,
+      "primary": "ZP",
+      "prefixes": [
+        "ZP"
+      ]
+    },
+    {
+      "iso": "PE",
+      "name": {
+        "en": "Peru",
+        "pl": "Peru",
+        "de": "Peru",
+        "ja": "ペルー",
+        "zh": "秘鲁"
+      },
+      "lat": -12.0464,
+      "lon": -77.0428,
+      "primary": "OA",
+      "prefixes": [
+        "OA",
+        "OB",
+        "OC",
+        "4T"
+      ]
+    },
+    {
+      "iso": "PH",
+      "name": {
+        "en": "Philippines",
+        "pl": "Filipiny",
+        "de": "Philippinen",
+        "ja": "フィリピン",
+        "zh": "菲律宾"
+      },
+      "lat": 14.5995,
+      "lon": 120.9842,
+      "primary": "DU",
+      "prefixes": [
+        "DU",
+        "DV",
+        "DW",
+        "DX",
+        "DY",
+        "DZ",
+        "4D",
+        "4E",
+        "4F",
+        "4G",
+        "4H",
+        "4I"
+      ]
+    },
+    {
+      "iso": "PN",
+      "name": {
+        "en": "Pitcairn",
+        "pl": "Pitcairn",
+        "de": "Pitcairninseln",
+        "ja": "ピトケアン諸島",
+        "zh": "皮特凯恩群岛"
+      },
+      "lat": -25.0662,
+      "lon": -130.1005,
+      "primary": "VP6",
+      "prefixes": [
+        "VP6"
+      ]
+    },
+    {
+      "iso": "PL",
+      "name": {
+        "en": "Poland",
+        "pl": "Polska",
+        "de": "Polen",
+        "ja": "ポーランド",
+        "zh": "波兰"
+      },
+      "lat": 52.2297,
+      "lon": 21.0122,
+      "primary": "SP",
+      "prefixes": [
+        "SP",
+        "SN",
+        "SO",
+        "SQ",
+        "SR",
+        "3Z",
+        "HF"
+      ]
+    },
+    {
+      "iso": "FDG",
+      "name": {
+        "en": "Free City of Danzig",
+        "pl": "Wolne Miasto Gdańsk",
+        "de": "Freie Stadt Danzig",
+        "ja": "ダンツィヒ自由市",
+        "zh": "但泽自由市"
+      },
+      "lat": 54.352,
+      "lon": 18.6466,
+      "primary": "YM",
+      "prefixes": [
+        "YM"
+      ],
+      "historical": true,
+      "years": "1920–1939"
+    },
+    {
+      "iso": "PT",
+      "name": {
+        "en": "Portugal",
+        "pl": "Portugalia",
+        "de": "Portugal",
+        "ja": "ポルトガル",
+        "zh": "葡萄牙"
+      },
+      "lat": 38.7223,
+      "lon": -9.1393,
+      "primary": "CT",
+      "prefixes": [
+        "CT",
+        "CS",
+        "CR",
+        "CQ",
+        "CU"
+      ]
+    },
+    {
+      "iso": "PR",
+      "name": {
+        "en": "Puerto Rico",
+        "pl": "Portoryko",
+        "de": "Puerto Rico",
+        "ja": "プエルトリコ",
+        "zh": "波多黎各"
+      },
+      "lat": 18.4655,
+      "lon": -66.1057,
+      "primary": "KP4",
+      "prefixes": [
+        "KP4"
+      ]
+    },
+    {
+      "iso": "QA",
+      "name": {
+        "en": "Qatar",
+        "pl": "Katar",
+        "de": "Katar",
+        "ja": "カタール",
+        "zh": "卡塔尔"
+      },
+      "lat": 25.2854,
+      "lon": 51.531,
+      "primary": "A7",
+      "prefixes": [
+        "A7"
+      ]
+    },
+    {
+      "iso": "RS",
+      "name": {
+        "en": "Serbia",
+        "pl": "Serbia",
+        "de": "Serbien",
+        "ja": "セルビア",
+        "zh": "塞尔维亚"
+      },
+      "lat": 44.7866,
+      "lon": 20.4489,
+      "primary": "YU",
+      "prefixes": [
+        "YU",
+        "YT",
+        "YZ",
+        "4N"
+      ]
+    },
+    {
+      "iso": "CG",
+      "name": {
+        "en": "Congo",
+        "pl": "Kongo",
+        "de": "Kongo",
+        "ja": "コンゴ共和国",
+        "zh": "刚果共和国"
+      },
+      "lat": -4.2634,
+      "lon": 15.2429,
+      "primary": "TN",
+      "prefixes": [
+        "TN"
+      ]
+    },
+    {
+      "iso": "RO",
+      "name": {
+        "en": "Romania",
+        "pl": "Rumunia",
+        "de": "Rumänien",
+        "ja": "ルーマニア",
+        "zh": "罗马尼亚"
+      },
+      "lat": 44.4268,
+      "lon": 26.1025,
+      "primary": "YO",
+      "prefixes": [
+        "YO",
+        "YP",
+        "YQ",
+        "YR"
+      ]
+    },
+    {
+      "iso": "RU",
+      "name": {
+        "en": "Russia",
+        "pl": "Rosja",
+        "de": "Russland",
+        "ja": "ロシア",
+        "zh": "俄罗斯"
+      },
+      "lat": 55.7558,
+      "lon": 37.6173,
+      "primary": "R/UA",
+      "prefixes": [
+        "R",
+        "RA",
+        "RB",
+        "RC",
+        "RD",
+        "RE",
+        "RF",
+        "RG",
+        "RH",
+        "RI",
+        "RJ",
+        "RK",
+        "RL",
+        "RM",
+        "RN",
+        "RO",
+        "RP",
+        "RQ",
+        "RR",
+        "RS",
+        "RT",
+        "RU",
+        "RV",
+        "RW",
+        "RX",
+        "RY",
+        "RZ",
+        "U",
+        "UA",
+        "UB",
+        "UC",
+        "UD",
+        "UE",
+        "UF",
+        "UG",
+        "UH",
+        "UI"
+      ]
+    },
+    {
+      "iso": "RW",
+      "name": {
+        "en": "Rwanda",
+        "pl": "Rwanda",
+        "de": "Ruanda",
+        "ja": "ルワンダ",
+        "zh": "卢旺达"
+      },
+      "lat": -1.9441,
+      "lon": 30.0619,
+      "primary": "9X",
+      "prefixes": [
+        "9X"
+      ]
+    },
+    {
+      "iso": "BL",
+      "name": {
+        "en": "Saint Barthélemy",
+        "pl": "Saint-Barthélemy",
+        "de": "Saint-Barthélemy",
+        "ja": "サン・バルテルミー",
+        "zh": "圣巴泰勒米"
+      },
+      "lat": 17.9,
+      "lon": -62.8333,
+      "primary": "FJ",
+      "prefixes": [
+        "FJ"
+      ]
+    },
+    {
+      "iso": "SH",
+      "name": {
+        "en": "Saint Helena",
+        "pl": "Wyspa Świętej Heleny",
+        "de": "St. Helena",
+        "ja": "セントヘレナ",
+        "zh": "圣赫勒拿"
+      },
+      "lat": -15.965,
+      "lon": -5.7089,
+      "primary": "ZD7",
+      "prefixes": [
+        "ZD7"
+      ]
+    },
+    {
+      "iso": "KN",
+      "name": {
+        "en": "Saint Kitts and Nevis",
+        "pl": "Saint Kitts i Nevis",
+        "de": "St. Kitts und Nevis",
+        "ja": "セントクリストファー・ネービス",
+        "zh": "圣基茨和尼维斯"
+      },
+      "lat": 17.3026,
+      "lon": -62.7177,
+      "primary": "V4",
+      "prefixes": [
+        "V4"
+      ]
+    },
+    {
+      "iso": "LC",
+      "name": {
+        "en": "Saint Lucia",
+        "pl": "Saint Lucia",
+        "de": "St. Lucia",
+        "ja": "セントルシア",
+        "zh": "圣卢西亚"
+      },
+      "lat": 14.0101,
+      "lon": -60.9875,
+      "primary": "J6",
+      "prefixes": [
+        "J6"
+      ]
+    },
+    {
+      "iso": "MF",
+      "name": {
+        "en": "Saint Martin",
+        "pl": "Saint-Martin",
+        "de": "Saint-Martin",
+        "ja": "サン・マルタン",
+        "zh": "圣马丁"
+      },
+      "lat": 18.0708,
+      "lon": -63.0501,
+      "primary": "FS",
+      "prefixes": [
+        "FS"
+      ]
+    },
+    {
+      "iso": "PM",
+      "name": {
+        "en": "Saint Pierre and Miquelon",
+        "pl": "Saint-Pierre i Miquelon",
+        "de": "St. Pierre und Miquelon",
+        "ja": "サンピエール島・ミクロン島",
+        "zh": "圣皮埃尔和密克隆"
+      },
+      "lat": 46.7811,
+      "lon": -56.171,
+      "primary": "FP",
+      "prefixes": [
+        "FP"
+      ]
+    },
+    {
+      "iso": "VC",
+      "name": {
+        "en": "Saint Vincent and the Grenadines",
+        "pl": "Saint Vincent i Grenadyny",
+        "de": "St. Vincent und die Grenadinen",
+        "ja": "セントビンセントおよびグレナディーン諸島",
+        "zh": "圣文森特和格林纳丁斯"
+      },
+      "lat": 13.16,
+      "lon": -61.2248,
+      "primary": "J8",
+      "prefixes": [
+        "J8"
+      ]
+    },
+    {
+      "iso": "WS",
+      "name": {
+        "en": "Samoa",
+        "pl": "Samoa",
+        "de": "Samoa",
+        "ja": "サモア",
+        "zh": "萨摩亚"
+      },
+      "lat": -13.8507,
+      "lon": -171.7514,
+      "primary": "5W",
+      "prefixes": [
+        "5W"
+      ]
+    },
+    {
+      "iso": "SM",
+      "name": {
+        "en": "San Marino",
+        "pl": "San Marino",
+        "de": "San Marino",
+        "ja": "サンマリノ",
+        "zh": "圣马力诺"
+      },
+      "lat": 43.9424,
+      "lon": 12.4578,
+      "primary": "T7",
+      "prefixes": [
+        "T7"
+      ]
+    },
+    {
+      "iso": "SA",
+      "name": {
+        "en": "Saudi Arabia",
+        "pl": "Arabia Saudyjska",
+        "de": "Saudi-Arabien",
+        "ja": "サウジアラビア",
+        "zh": "沙特阿拉伯"
+      },
+      "lat": 24.7136,
+      "lon": 46.6753,
+      "primary": "HZ",
+      "prefixes": [
+        "HZ",
+        "7Z",
+        "8Z"
+      ]
+    },
+    {
+      "iso": "SN",
+      "name": {
+        "en": "Senegal",
+        "pl": "Senegal",
+        "de": "Senegal",
+        "ja": "セネガル",
+        "zh": "塞内加尔"
+      },
+      "lat": 14.7167,
+      "lon": -17.4677,
+      "primary": "6W",
+      "prefixes": [
+        "6V",
+        "6W"
+      ]
+    },
+    {
+      "iso": "SC",
+      "name": {
+        "en": "Seychelles",
+        "pl": "Seszele",
+        "de": "Seychellen",
+        "ja": "セーシェル",
+        "zh": "塞舌尔"
+      },
+      "lat": -4.6191,
+      "lon": 55.4513,
+      "primary": "S7",
+      "prefixes": [
+        "S7"
+      ]
+    },
+    {
+      "iso": "SL",
+      "name": {
+        "en": "Sierra Leone",
+        "pl": "Sierra Leone",
+        "de": "Sierra Leone",
+        "ja": "シエラレオネ",
+        "zh": "塞拉利昂"
+      },
+      "lat": 8.4657,
+      "lon": -13.2317,
+      "primary": "9L",
+      "prefixes": [
+        "9L"
+      ]
+    },
+    {
+      "iso": "SG",
+      "name": {
+        "en": "Singapore",
+        "pl": "Singapur",
+        "de": "Singapur",
+        "ja": "シンガポール",
+        "zh": "新加坡"
+      },
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "primary": "9V",
+      "prefixes": [
+        "9V",
+        "S6"
+      ]
+    },
+    {
+      "iso": "SX",
+      "name": {
+        "en": "Sint Maarten",
+        "pl": "Sint Maarten",
+        "de": "Sint Maarten",
+        "ja": "シント・マールテン",
+        "zh": "圣马丁（荷）"
+      },
+      "lat": 18.0425,
+      "lon": -63.0548,
+      "primary": "PJ7",
+      "prefixes": [
+        "PJ7"
+      ]
+    },
+    {
+      "iso": "SK",
+      "name": {
+        "en": "Slovakia",
+        "pl": "Słowacja",
+        "de": "Slowakei",
+        "ja": "スロバキア",
+        "zh": "斯洛伐克"
+      },
+      "lat": 48.1486,
+      "lon": 17.1077,
+      "primary": "OM",
+      "prefixes": [
+        "OM"
+      ]
+    },
+    {
+      "iso": "SI",
+      "name": {
+        "en": "Slovenia",
+        "pl": "Słowenia",
+        "de": "Slowenien",
+        "ja": "スロベニア",
+        "zh": "斯洛文尼亚"
+      },
+      "lat": 46.0569,
+      "lon": 14.5058,
+      "primary": "S5",
+      "prefixes": [
+        "S5"
+      ]
+    },
+    {
+      "iso": "SB",
+      "name": {
+        "en": "Solomon Islands",
+        "pl": "Wyspy Salomona",
+        "de": "Salomonen",
+        "ja": "ソロモン諸島",
+        "zh": "所罗门群岛"
+      },
+      "lat": -9.4456,
+      "lon": 159.9729,
+      "primary": "H4",
+      "prefixes": [
+        "H4"
+      ]
+    },
+    {
+      "iso": "SO",
+      "name": {
+        "en": "Somalia",
+        "pl": "Somalia",
+        "de": "Somalia",
+        "ja": "ソマリア",
+        "zh": "索马里"
+      },
+      "lat": 2.0469,
+      "lon": 45.3182,
+      "primary": "T5",
+      "prefixes": [
+        "T5",
+        "6O"
+      ]
+    },
+    {
+      "iso": "ZA",
+      "name": {
+        "en": "South Africa",
+        "pl": "Południowa Afryka",
+        "de": "Südafrika",
+        "ja": "南アフリカ",
+        "zh": "南非"
+      },
+      "lat": -25.7479,
+      "lon": 28.2293,
+      "primary": "ZS",
+      "prefixes": [
+        "ZS",
+        "ZR",
+        "ZT",
+        "ZU",
+        "H5",
+        "S8",
+        "V9"
+      ]
+    },
+    {
+      "iso": "KR",
+      "name": {
+        "en": "South Korea",
+        "pl": "Korea Południowa",
+        "de": "Südkorea",
+        "ja": "韓国",
+        "zh": "韩国"
+      },
+      "lat": 37.5665,
+      "lon": 126.978,
+      "primary": "HL",
+      "prefixes": [
+        "HL",
+        "DS",
+        "DT",
+        "6K",
+        "6L",
+        "6M",
+        "6N"
+      ]
+    },
+    {
+      "iso": "SS",
+      "name": {
+        "en": "South Sudan",
+        "pl": "Sudan Południowy",
+        "de": "Südsudan",
+        "ja": "南スーダン",
+        "zh": "南苏丹"
+      },
+      "lat": 4.8594,
+      "lon": 31.5713,
+      "primary": "Z8",
+      "prefixes": [
+        "Z8"
+      ]
+    },
+    {
+      "iso": "ES",
+      "name": {
+        "en": "Spain",
+        "pl": "Hiszpania",
+        "de": "Spanien",
+        "ja": "スペイン",
+        "zh": "西班牙"
+      },
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "primary": "EA",
+      "prefixes": [
+        "EA",
+        "EB",
+        "EC",
+        "ED",
+        "EE",
+        "EF",
+        "EG",
+        "EH",
+        "AM",
+        "AN",
+        "AO"
+      ]
+    },
+    {
+      "iso": "LK",
+      "name": {
+        "en": "Sri Lanka",
+        "pl": "Sri Lanka",
+        "de": "Sri Lanka",
+        "ja": "スリランカ",
+        "zh": "斯里兰卡"
+      },
+      "lat": 6.9271,
+      "lon": 79.8612,
+      "primary": "4S",
+      "prefixes": [
+        "4S",
+        "4P",
+        "4Q",
+        "4R"
+      ]
+    },
+    {
+      "iso": "SD",
+      "name": {
+        "en": "Sudan",
+        "pl": "Sudan",
+        "de": "Sudan",
+        "ja": "スーダン",
+        "zh": "苏丹"
+      },
+      "lat": 15.5007,
+      "lon": 32.5599,
+      "primary": "ST",
+      "prefixes": [
+        "ST",
+        "6T",
+        "6U"
+      ]
+    },
+    {
+      "iso": "SR",
+      "name": {
+        "en": "Suriname",
+        "pl": "Surinam",
+        "de": "Suriname",
+        "ja": "スリナム",
+        "zh": "苏里南"
+      },
+      "lat": 5.852,
+      "lon": -55.2038,
+      "primary": "PZ",
+      "prefixes": [
+        "PZ"
+      ]
+    },
+    {
+      "iso": "SE",
+      "name": {
+        "en": "Sweden",
+        "pl": "Szwecja",
+        "de": "Schweden",
+        "ja": "スウェーデン",
+        "zh": "瑞典"
+      },
+      "lat": 59.3293,
+      "lon": 18.0686,
+      "primary": "SM",
+      "prefixes": [
+        "SM",
+        "SA",
+        "SB",
+        "SC",
+        "SD",
+        "SE",
+        "SF",
+        "SG",
+        "SH",
+        "SI",
+        "SJ",
+        "SK",
+        "SL",
+        "7S",
+        "8S"
+      ]
+    },
+    {
+      "iso": "CH",
+      "name": {
+        "en": "Switzerland",
+        "pl": "Szwajcaria",
+        "de": "Schweiz",
+        "ja": "スイス",
+        "zh": "瑞士"
+      },
+      "lat": 46.948,
+      "lon": 7.4474,
+      "primary": "HB",
+      "prefixes": [
+        "HB",
+        "HE"
+      ]
+    },
+    {
+      "iso": "SY",
+      "name": {
+        "en": "Syria",
+        "pl": "Syria",
+        "de": "Syrien",
+        "ja": "シリア",
+        "zh": "叙利亚"
+      },
+      "lat": 33.5138,
+      "lon": 36.2765,
+      "primary": "YK",
+      "prefixes": [
+        "YK",
+        "6C"
+      ]
+    },
+    {
+      "iso": "ST",
+      "name": {
+        "en": "São Tomé and Príncipe",
+        "pl": "Wyspy Świętego Tomasza i Książęca",
+        "de": "São Tomé und Príncipe",
+        "ja": "サントメ・プリンシペ",
+        "zh": "圣多美和普林西比"
+      },
+      "lat": 0.3365,
+      "lon": 6.7273,
+      "primary": "S9",
+      "prefixes": [
+        "S9"
+      ]
+    },
+    {
+      "iso": "TW",
+      "name": {
+        "en": "Taiwan",
+        "pl": "Tajwan",
+        "de": "Taiwan",
+        "ja": "台湾",
+        "zh": "台湾"
+      },
+      "lat": 25.033,
+      "lon": 121.5654,
+      "primary": "BV",
+      "prefixes": [
+        "BV",
+        "BM",
+        "BN",
+        "BO",
+        "BP",
+        "BQ",
+        "BU",
+        "BW",
+        "BX"
+      ]
+    },
+    {
+      "iso": "TJ",
+      "name": {
+        "en": "Tajikistan",
+        "pl": "Tadżykistan",
+        "de": "Tadschikistan",
+        "ja": "タジキスタン",
+        "zh": "塔吉克斯坦"
+      },
+      "lat": 38.5598,
+      "lon": 68.787,
+      "primary": "EY",
+      "prefixes": [
+        "EY"
+      ]
+    },
+    {
+      "iso": "TH",
+      "name": {
+        "en": "Thailand",
+        "pl": "Tajlandia",
+        "de": "Thailand",
+        "ja": "タイ",
+        "zh": "泰国"
+      },
+      "lat": 13.7563,
+      "lon": 100.5018,
+      "primary": "HS",
+      "prefixes": [
+        "HS",
+        "E2"
+      ]
+    },
+    {
+      "iso": "BS",
+      "name": {
+        "en": "Bahamas",
+        "pl": "Bahamy",
+        "de": "Bahamas",
+        "ja": "バハマ",
+        "zh": "巴哈马"
+      },
+      "lat": 25.0443,
+      "lon": -77.3504,
+      "primary": "C6",
+      "prefixes": [
+        "C6"
+      ]
+    },
+    {
+      "iso": "TG",
+      "name": {
+        "en": "Togo",
+        "pl": "Togo",
+        "de": "Togo",
+        "ja": "トーゴ",
+        "zh": "多哥"
+      },
+      "lat": 6.1725,
+      "lon": 1.2314,
+      "primary": "5V",
+      "prefixes": [
+        "5V"
+      ]
+    },
+    {
+      "iso": "TO",
+      "name": {
+        "en": "Tonga",
+        "pl": "Tonga",
+        "de": "Tonga",
+        "ja": "トンガ",
+        "zh": "汤加"
+      },
+      "lat": -21.1394,
+      "lon": -175.1982,
+      "primary": "A3",
+      "prefixes": [
+        "A3"
+      ]
+    },
+    {
+      "iso": "TT",
+      "name": {
+        "en": "Trinidad and Tobago",
+        "pl": "Trynidad i Tobago",
+        "de": "Trinidad und Tobago",
+        "ja": "トリニダード・トバゴ",
+        "zh": "特立尼达和多巴哥"
+      },
+      "lat": 10.6918,
+      "lon": -61.2225,
+      "primary": "9Y",
+      "prefixes": [
+        "9Y",
+        "9Z"
+      ]
+    },
+    {
+      "iso": "TN",
+      "name": {
+        "en": "Tunisia",
+        "pl": "Tunezja",
+        "de": "Tunesien",
+        "ja": "チュニジア",
+        "zh": "突尼斯"
+      },
+      "lat": 36.8065,
+      "lon": 10.1815,
+      "primary": "3V",
+      "prefixes": [
+        "3V",
+        "TS"
+      ]
+    },
+    {
+      "iso": "TR",
+      "name": {
+        "en": "Turkey",
+        "pl": "Turcja",
+        "de": "Türkei",
+        "ja": "トルコ",
+        "zh": "土耳其"
+      },
+      "lat": 39.9334,
+      "lon": 32.8597,
+      "primary": "TA",
+      "prefixes": [
+        "TA",
+        "TB",
+        "TC",
+        "YM"
+      ]
+    },
+    {
+      "iso": "TM",
+      "name": {
+        "en": "Turkmenistan",
+        "pl": "Turkmenistan",
+        "de": "Turkmenistan",
+        "ja": "トルクメニスタン",
+        "zh": "土库曼斯坦"
+      },
+      "lat": 37.9601,
+      "lon": 58.3261,
+      "primary": "EZ",
+      "prefixes": [
+        "EZ"
+      ]
+    },
+    {
+      "iso": "TC",
+      "name": {
+        "en": "Turks and Caicos Islands",
+        "pl": "Turks i Caicos",
+        "de": "Turks- und Caicosinseln",
+        "ja": "タークス・カイコス諸島",
+        "zh": "特克斯和凯科斯群岛"
+      },
+      "lat": 21.46,
+      "lon": -71.14,
+      "primary": "VP5",
+      "prefixes": [
+        "VP5"
+      ]
+    },
+    {
+      "iso": "TV",
+      "name": {
+        "en": "Tuvalu",
+        "pl": "Tuvalu",
+        "de": "Tuvalu",
+        "ja": "ツバル",
+        "zh": "图瓦卢"
+      },
+      "lat": -8.5167,
+      "lon": 179.1983,
+      "primary": "T2",
+      "prefixes": [
+        "T2"
+      ]
+    },
+    {
+      "iso": "UG",
+      "name": {
+        "en": "Uganda",
+        "pl": "Uganda",
+        "de": "Uganda",
+        "ja": "ウガンダ",
+        "zh": "乌干达"
+      },
+      "lat": 0.3476,
+      "lon": 32.5825,
+      "primary": "5X",
+      "prefixes": [
+        "5X"
+      ]
+    },
+    {
+      "iso": "UA",
+      "name": {
+        "en": "Ukraine",
+        "pl": "Ukraina",
+        "de": "Ukraine",
+        "ja": "ウクライナ",
+        "zh": "乌克兰"
+      },
+      "lat": 50.4501,
+      "lon": 30.5234,
+      "primary": "UR",
+      "prefixes": [
+        "UR",
+        "US",
+        "UT",
+        "UU",
+        "UV",
+        "UW",
+        "UX",
+        "UY",
+        "UZ",
+        "EM",
+        "EN",
+        "EO"
+      ]
+    },
+    {
+      "iso": "AE",
+      "name": {
+        "en": "United Arab Emirates",
+        "pl": "Zjednoczone Emiraty Arabskie",
+        "de": "Vereinigte Arabische Emirate",
+        "ja": "アラブ首長国連邦",
+        "zh": "阿拉伯联合酋长国"
+      },
+      "lat": 24.4539,
+      "lon": 54.3773,
+      "primary": "A6",
+      "prefixes": [
+        "A6"
+      ]
+    },
+    {
+      "iso": "GB",
+      "name": {
+        "en": "United Kingdom",
+        "pl": "Wielka Brytania",
+        "de": "Vereinigtes Königreich",
+        "ja": "イギリス",
+        "zh": "英国"
+      },
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "primary": "G/M",
+      "prefixes": [
+        "G",
+        "M",
+        "2E",
+        "2D",
+        "2I",
+        "2J",
+        "2M",
+        "2U",
+        "2W",
+        "GD",
+        "GI",
+        "GJ",
+        "GM",
+        "GU",
+        "GW",
+        "GX",
+        "GH",
+        "GN",
+        "GT",
+        "GS",
+        "GC",
+        "GP",
+        "MZ",
+        "MM",
+        "MI",
+        "MJ",
+        "MD",
+        "MU",
+        "MW",
+        "MX",
+        "MT",
+        "MS",
+        "MP",
+        "MC"
+      ]
+    },
+    {
+      "iso": "TZ",
+      "name": {
+        "en": "Tanzania",
+        "pl": "Tanzania",
+        "de": "Tansania",
+        "ja": "タンザニア",
+        "zh": "坦桑尼亚"
+      },
+      "lat": -6.163,
+      "lon": 35.7516,
+      "primary": "5H",
+      "prefixes": [
+        "5H",
+        "5I"
+      ]
+    },
+    {
+      "iso": "UM",
+      "name": {
+        "en": "US Minor Outlying Islands",
+        "pl": "Dalekie Wyspy Mniejsze USA",
+        "de": "Amerikanische Überseeinseln",
+        "ja": "合衆国領有小離島",
+        "zh": "美国本土外小岛屿"
+      },
+      "lat": 19.2823,
+      "lon": 166.647,
+      "primary": "KH",
+      "prefixes": [
+        "KH"
+      ]
+    },
+    {
+      "iso": "VI",
+      "name": {
+        "en": "US Virgin Islands",
+        "pl": "Wyspy Dziewicze Stanów Zjednoczonych",
+        "de": "Amerikanische Jungferninseln",
+        "ja": "米領ヴァージン諸島",
+        "zh": "美属维尔京群岛"
+      },
+      "lat": 18.3419,
+      "lon": -64.9307,
+      "primary": "KP2",
+      "prefixes": [
+        "KP2"
+      ]
+    },
+    {
+      "iso": "US",
+      "name": {
+        "en": "United States",
+        "pl": "Stany Zjednoczone",
+        "de": "Vereinigte Staaten",
+        "ja": "アメリカ合衆国",
+        "zh": "美国"
+      },
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "primary": "K/N/W",
+      "prefixes": [
+        "K",
+        "N",
+        "W",
+        "AA",
+        "AB",
+        "AC",
+        "AD",
+        "AE",
+        "AF",
+        "AG",
+        "AH",
+        "AI",
+        "AJ",
+        "AK",
+        "AL",
+        "KA",
+        "KB",
+        "KC",
+        "KD",
+        "KE",
+        "KF",
+        "KG",
+        "KH",
+        "KI",
+        "KJ",
+        "KK",
+        "KL",
+        "KM",
+        "KN",
+        "KO",
+        "KP",
+        "KQ",
+        "KR",
+        "KS",
+        "KT",
+        "KU",
+        "KV",
+        "KW",
+        "KX",
+        "KY",
+        "KZ",
+        "NA",
+        "NB",
+        "NC",
+        "ND",
+        "NE",
+        "NF",
+        "NG",
+        "NH",
+        "NI",
+        "NJ",
+        "NK",
+        "NL",
+        "NM",
+        "NN",
+        "NO",
+        "NP",
+        "NQ",
+        "NR",
+        "NS",
+        "NT",
+        "NU",
+        "NV",
+        "NW",
+        "NX",
+        "NY",
+        "NZ",
+        "WA",
+        "WB",
+        "WC",
+        "WD",
+        "WE",
+        "WF",
+        "WG",
+        "WH",
+        "WI",
+        "WJ",
+        "WK",
+        "WL",
+        "WM",
+        "WN",
+        "WO",
+        "WP",
+        "WQ",
+        "WR",
+        "WS",
+        "WT",
+        "WU",
+        "WV",
+        "WW",
+        "WX",
+        "WY",
+        "WZ"
+      ]
+    },
+    {
+      "iso": "UY",
+      "name": {
+        "en": "Uruguay",
+        "pl": "Urugwaj",
+        "de": "Uruguay",
+        "ja": "ウルグアイ",
+        "zh": "乌拉圭"
+      },
+      "lat": -34.9011,
+      "lon": -56.1645,
+      "primary": "CX",
+      "prefixes": [
+        "CX",
+        "CV",
+        "CW"
+      ]
+    },
+    {
+      "iso": "UZ",
+      "name": {
+        "en": "Uzbekistan",
+        "pl": "Uzbekistan",
+        "de": "Usbekistan",
+        "ja": "ウズベキスタン",
+        "zh": "乌兹别克斯坦"
+      },
+      "lat": 41.2995,
+      "lon": 69.2401,
+      "primary": "UJ",
+      "prefixes": [
+        "UJ",
+        "UK",
+        "UL",
+        "UM"
+      ]
+    },
+    {
+      "iso": "VU",
+      "name": {
+        "en": "Vanuatu",
+        "pl": "Vanuatu",
+        "de": "Vanuatu",
+        "ja": "バヌアツ",
+        "zh": "瓦努阿图"
+      },
+      "lat": -17.7333,
+      "lon": 168.3273,
+      "primary": "YJ",
+      "prefixes": [
+        "YJ"
+      ]
+    },
+    {
+      "iso": "VA",
+      "name": {
+        "en": "Vatican City",
+        "pl": "Watykan",
+        "de": "Vatikanstadt",
+        "ja": "バチカン",
+        "zh": "梵蒂冈"
+      },
+      "lat": 41.9029,
+      "lon": 12.4534,
+      "primary": "HV",
+      "prefixes": [
+        "HV"
+      ]
+    },
+    {
+      "iso": "VE",
+      "name": {
+        "en": "Venezuela",
+        "pl": "Wenezuela",
+        "de": "Venezuela",
+        "ja": "ベネズエラ",
+        "zh": "委内瑞拉"
+      },
+      "lat": 10.4806,
+      "lon": -66.9036,
+      "primary": "YV",
+      "prefixes": [
+        "YV",
+        "YW",
+        "YX",
+        "YY",
+        "4M"
+      ]
+    },
+    {
+      "iso": "VN",
+      "name": {
+        "en": "Vietnam",
+        "pl": "Wietnam",
+        "de": "Vietnam",
+        "ja": "ベトナム",
+        "zh": "越南"
+      },
+      "lat": 21.0278,
+      "lon": 105.8342,
+      "primary": "XV",
+      "prefixes": [
+        "XV",
+        "3W"
+      ]
+    },
+    {
+      "iso": "WF",
+      "name": {
+        "en": "Wallis and Futuna",
+        "pl": "Wallis i Futuna",
+        "de": "Wallis und Futuna",
+        "ja": "ウォリス・フツナ",
+        "zh": "瓦利斯和富图纳"
+      },
+      "lat": -13.2825,
+      "lon": -176.1743,
+      "primary": "FW",
+      "prefixes": [
+        "FW"
+      ]
+    },
+    {
+      "iso": "EH",
+      "name": {
+        "en": "Western Sahara",
+        "pl": "Sahara Zachodnia",
+        "de": "Westsahara",
+        "ja": "西サハラ",
+        "zh": "西撒哈拉"
+      },
+      "lat": 27.1536,
+      "lon": -13.2033,
+      "primary": "S0",
+      "prefixes": [
+        "S0"
+      ]
+    },
+    {
+      "iso": "YE",
+      "name": {
+        "en": "Yemen",
+        "pl": "Jemen",
+        "de": "Jemen",
+        "ja": "イエメン",
+        "zh": "也门"
+      },
+      "lat": 15.3694,
+      "lon": 44.191,
+      "primary": "7O",
+      "prefixes": [
+        "7O"
+      ]
+    },
+    {
+      "iso": "ZM",
+      "name": {
+        "en": "Zambia",
+        "pl": "Zambia",
+        "de": "Sambia",
+        "ja": "ザンビア",
+        "zh": "赞比亚"
+      },
+      "lat": -15.3875,
+      "lon": 28.3228,
+      "primary": "9J",
+      "prefixes": [
+        "9I",
+        "9J"
+      ]
+    },
+    {
+      "iso": "ZW",
+      "name": {
+        "en": "Zimbabwe",
+        "pl": "Zimbabwe",
+        "de": "Simbabwe",
+        "ja": "ジンバブエ",
+        "zh": "津巴布韦"
+      },
+      "lat": -17.8252,
+      "lon": 31.0335,
+      "primary": "Z2",
+      "prefixes": [
+        "Z2"
+      ]
+    },
+    {
+      "iso": "SZ",
+      "name": {
+        "en": "Eswatini",
+        "pl": "Eswatini",
+        "de": "Eswatini",
+        "ja": "エスワティニ",
+        "zh": "斯威士兰"
+      },
+      "lat": -26.3054,
+      "lon": 31.1367,
+      "primary": "3DA",
+      "prefixes": [
+        "3D"
+      ]
+    }
+  ],
+  "position": "capital"
+}

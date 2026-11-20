@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ham prefix map</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    font-family: ui-monospace, "Cascadia Mono", "DejaVu Sans Mono", "Noto Sans CJK JP", "Noto Sans SC", monospace;
+    background: #111;
+    color: #eee;
+  }
+  #map {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    cursor: grab;
+    background: #1a1a2e;
+    touch-action: none;
+  }
+  #map.drag { cursor: grabbing; }
+  #tiles {
+    position: absolute;
+    left: 0; top: 0;
+    width: 0; height: 0;
+    will-change: transform;
+  }
+  #tiles img {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    image-rendering: auto;
+    pointer-events: none;
+    user-select: none;
+  }
+  #labels {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .lab {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    cursor: pointer;
+    white-space: pre-line;
+    text-align: center;
+    font-weight: 700;
+    color: #111;
+    background: rgba(255, 220, 80, 0.88);
+    border: 1px solid rgba(0,0,0,0.35);
+    border-radius: 3px;
+    padding: 1px 5px;
+    line-height: 1.2;
+    text-shadow: none;
+    user-select: none;
+  }
+  .lab:hover, .lab.on {
+    background: #fff;
+    border-color: #c00;
+    z-index: 5;
+  }
+  .lab.hist {
+    background: rgba(160, 190, 220, 0.9);
+    border-color: rgba(40, 70, 110, 0.45);
+    color: #1a2a3a;
+    font-style: italic;
+  }
+  .lab.hist:hover, .lab.hist.on {
+    background: #d8e8f8;
+    border-color: #246;
+  }
+  #bar {
+    position: absolute;
+    z-index: 20;
+    left: 8px; top: 8px; right: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    pointer-events: none;
+  }
+  #bar > * { pointer-events: auto; }
+  #bar input {
+    flex: 1 1 160px;
+    min-width: 120px;
+    max-width: 280px;
+    background: rgba(0,0,0,0.75);
+    color: #eee;
+    border: 1px solid #555;
+    padding: 6px 8px;
+    font: inherit;
+    font-size: 13px;
+  }
+  #bar button, #zoomctrl button, #lang button {
+    background: rgba(0,0,0,0.75);
+    color: #9a9a9a;
+    border: 1px solid #555;
+    font: inherit;
+    font-size: 13px;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+  #bar button:hover, #zoomctrl button:hover, #lang button:hover { border-color: #fc0; color: #eee; }
+  #lang { display: flex; gap: 4px; margin-left: auto; }
+  #lang button.on { color: #fff; border-color: #e23b3b; }
+  #zoomctrl {
+    position: absolute;
+    z-index: 20;
+    right: 8px; bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  #info {
+    position: absolute;
+    z-index: 20;
+    left: 8px; bottom: 28px;
+    max-width: min(360px, calc(100% - 60px));
+    background: rgba(0,0,0,0.82);
+    border: 1px solid #444;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 1.45;
+    display: none;
+  }
+  #info b { color: #fc0; }
+  #info .x {
+    float: right;
+    cursor: pointer;
+    color: #888;
+    margin-left: 8px;
+  }
+  #attr {
+    position: absolute;
+    z-index: 20;
+    right: 8px; bottom: 4px;
+    font-size: 10px;
+    color: #aaa;
+    background: rgba(0,0,0,0.55);
+    padding: 2px 6px;
+  }
+  #attr a { color: #ccc; }
+  #hint {
+    position: absolute;
+    z-index: 20;
+    left: 8px; top: 44px;
+    font-size: 11px;
+    color: #aaa;
+    background: rgba(0,0,0,0.55);
+    padding: 3px 7px;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div id="map">
+  <div id="tiles"></div>
+  <div id="labels"></div>
+</div>
+<div id="bar">
+  <input id="q" type="search" autocomplete="off" spellcheck="false">
+  <button type="button" id="goEu"></button>
+  <button type="button" id="goWorld"></button>
+  <nav id="lang" aria-label="Language">
+    <button type="button" data-lang="pl">PL</button>
+    <button type="button" data-lang="de">DE</button>
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="ja">JA</button>
+    <button type="button" data-lang="zh">中文</button>
+  </nav>
+</div>
+<div id="hint"></div>
+<div id="zoomctrl">
+  <button type="button" id="zin" title="+">+</button>
+  <button type="button" id="zout" title="−">−</button>
+</div>
+<div id="info"></div>
+<div id="attr">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></div>
+<script>
+(function () {
+  "use strict";
+
+  var TILE = 256;
+  var MIN_Z = 2;
+  var MAX_Z = 10;
+  var LANGS = ["pl", "de", "en", "ja", "zh"];
+  var I18N = {
+    pl: {
+      title: "Mapa prefixów ham",
+      placeholder: "prefix / kraj / ISO  np. SP, OK, Polska",
+      europe: "Europa",
+      world: "Świat",
+      hint: "scroll = zoom · przeciągnij = pan · klik = lista prefixów",
+      missing: "Brak: ",
+      loadErr: "Nie udało się wczytać prefixes.json — odpal przez lokalny HTTP (nie file://).",
+      historical: "historyczne"
+    },
+    de: {
+      title: "Ham-Prefix-Karte",
+      placeholder: "Prefix / Land / ISO  z.B. SP, OK, Polen",
+      europe: "Europa",
+      world: "Welt",
+      hint: "Scroll = Zoom · Ziehen = Pan · Klick = Prefix-Liste",
+      missing: "Nicht gefunden: ",
+      loadErr: "prefixes.json nicht geladen — lokalen HTTP-Server nutzen (nicht file://).",
+      historical: "historisch"
+    },
+    en: {
+      title: "Ham prefix map",
+      placeholder: "prefix / country / ISO  e.g. SP, OK, Poland",
+      europe: "Europe",
+      world: "World",
+      hint: "scroll = zoom · drag = pan · click = prefix list",
+      missing: "Not found: ",
+      loadErr: "Failed to load prefixes.json — serve over local HTTP (not file://).",
+      historical: "historical"
+    },
+    ja: {
+      title: "アマチュア無線プレフィックス地図",
+      placeholder: "プレフィックス / 国 / ISO  例: SP, OK, ポーランド",
+      europe: "ヨーロッパ",
+      world: "世界",
+      hint: "スクロール = ズーム · ドラッグ = 移動 · クリック = 一覧",
+      missing: "見つかりません: ",
+      loadErr: "prefixes.json を読めません — ローカル HTTP で開いてください (file:// 不可)。",
+      historical: "歴史的"
+    },
+    zh: {
+      title: "业余无线电呼号前缀地图",
+      placeholder: "前缀 / 国家 / ISO  例如 SP, OK, 波兰",
+      europe: "欧洲",
+      world: "世界",
+      hint: "滚轮 = 缩放 · 拖动 = 平移 · 点击 = 前缀列表",
+      missing: "未找到: ",
+      loadErr: "无法加载 prefixes.json — 请用本地 HTTP 打开（不要用 file://）。",
+      historical: "历史"
+    }
+  };
+
+  var mapEl = document.getElementById("map");
+  var tilesEl = document.getElementById("tiles");
+  var labelsEl = document.getElementById("labels");
+  var infoEl = document.getElementById("info");
+  var qEl = document.getElementById("q");
+  var hintEl = document.getElementById("hint");
+  var lang = "pl";
+  var selected = null;
+
+  try {
+    var saved = localStorage.getItem("ham-prefix-map-lang");
+    if (LANGS.indexOf(saved) !== -1) lang = saved;
+  } catch (e) {}
+
+  var view = { lon: 15, lat: 50, z: 4 };
+  var countries = [];
+  var labelNodes = [];
+  var tileCache = Object.create(null);
+  var dragging = false;
+  var lastX = 0, lastY = 0;
+  var pinch = null;
+
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+
+  function t() { return I18N[lang] || I18N.en; }
+
+  function countryName(co) {
+    var n = co.name;
+    if (typeof n === "string") return n;
+    return (n && (n[lang] || n.en || n.pl)) || co.iso;
+  }
+
+  function formatPrefixes(list) {
+    var lines = [];
+    for (var i = 0; i < list.length; i += 3) {
+      lines.push(list.slice(i, i + 3).join(", "));
+    }
+    return lines.join("\n");
+  }
+
+  function applyUi() {
+    var s = t();
+    document.documentElement.lang = lang === "zh" ? "zh-Hans" : lang;
+    document.title = s.title;
+    qEl.placeholder = s.placeholder;
+    document.getElementById("goEu").textContent = s.europe;
+    document.getElementById("goWorld").textContent = s.world;
+    hintEl.textContent = s.hint;
+    var btns = document.querySelectorAll("#lang button");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].classList.toggle("on", btns[i].getAttribute("data-lang") === lang);
+    }
+    for (var j = 0; j < labelNodes.length; j++) {
+      var co = countries[j];
+      labelNodes[j].title = countryName(co) + " — " + co.prefixes.join(", ") +
+        (co.historical ? " (" + t().historical + ")" : "");
+    }
+    if (selected) showInfo(selected);
+  }
+
+  function setLang(next) {
+    if (LANGS.indexOf(next) === -1) return;
+    lang = next;
+    try { localStorage.setItem("ham-prefix-map-lang", lang); } catch (e) {}
+    applyUi();
+  }
+
+  function lonLatToWorld(lon, lat, z) {
+    var scale = TILE * Math.pow(2, z);
+    var x = (lon + 180) / 360 * scale;
+    var s = Math.sin(lat * Math.PI / 180);
+    s = clamp(s, -0.9999, 0.9999);
+    var y = (0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI)) * scale;
+    return { x: x, y: y };
+  }
+
+  function worldToLonLat(x, y, z) {
+    var scale = TILE * Math.pow(2, z);
+    var lon = x / scale * 360 - 180;
+    var n = Math.PI - 2 * Math.PI * y / scale;
+    var lat = 180 / Math.PI * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n)));
+    return { lon: lon, lat: lat };
+  }
+
+  function centerWorld() {
+    return lonLatToWorld(view.lon, view.lat, view.z);
+  }
+
+  function tileUrl(z, x, y) {
+    var n = 1 << z;
+    x = ((x % n) + n) % n;
+    return "https://tile.openstreetmap.org/" + z + "/" + x + "/" + y + ".png";
+  }
+
+  function renderTiles() {
+    var w = mapEl.clientWidth;
+    var h = mapEl.clientHeight;
+    var c = centerWorld();
+    var z = view.z | 0;
+    var n = 1 << z;
+    var originX = c.x - w / 2;
+    var originY = c.y - h / 2;
+
+    var x0 = Math.floor(originX / TILE) - 1;
+    var y0 = Math.floor(originY / TILE) - 1;
+    var x1 = Math.floor((originX + w) / TILE) + 1;
+    var y1 = Math.floor((originY + h) / TILE) + 1;
+
+    var seen = Object.create(null);
+    for (var ty = y0; ty <= y1; ty++) {
+      if (ty < 0 || ty >= n) continue;
+      for (var tx = x0; tx <= x1; tx++) {
+        var key = z + "/" + tx + "/" + ty;
+        seen[key] = 1;
+        var img = tileCache[key];
+        if (!img) {
+          img = document.createElement("img");
+          img.decoding = "async";
+          img.alt = "";
+          img.src = tileUrl(z, tx, ty);
+          tileCache[key] = img;
+          tilesEl.appendChild(img);
+        }
+        img.style.left = Math.round(tx * TILE - originX) + "px";
+        img.style.top = Math.round(ty * TILE - originY) + "px";
+        img.style.display = "";
+      }
+    }
+    for (var k in tileCache) {
+      if (!seen[k]) tileCache[k].style.display = "none";
+    }
+  }
+
+  function fontSizeForZoom() {
+    var z = view.z;
+    if (z < 3) return 10;
+    if (z < 5) return 11;
+    if (z < 7) return 13;
+    return 15;
+  }
+
+  function shouldShow(c) {
+    var z = view.z;
+    if (c.historical) return z >= 5;
+    var tiny = { MC:1, AD:1, SM:1, LI:1, VA:1, MT:1, LU:1, SG:1, BH:1, AW:1, CW:1, SX:1, GI:1, JE:1, GG:1, IM:1, AX:1, FO:1 };
+    if (tiny[c.iso]) return z >= 5;
+    var huge = { RU:1, CA:1, US:1, CN:1, BR:1, AU:1, GL:1 };
+    if (huge[c.iso]) return z >= 2;
+    if (z < 3) return false;
+    if (z < 4) {
+      var major = { US:1, CA:1, BR:1, AR:1, RU:1, CN:1, IN:1, AU:1, ZA:1, EG:1, TR:1, GB:1, FR:1, DE:1, ES:1, IT:1, PL:1, JP:1, MX:1 };
+      return !!major[c.iso];
+    }
+    return true;
+  }
+
+  function renderLabels() {
+    var w = mapEl.clientWidth;
+    var h = mapEl.clientHeight;
+    var c = centerWorld();
+    var z = view.z | 0;
+    var n = 1 << z;
+    var worldW = n * TILE;
+    var fs = fontSizeForZoom();
+
+    for (var i = 0; i < labelNodes.length; i++) {
+      var node = labelNodes[i];
+      var co = countries[i];
+      if (!shouldShow(co)) {
+        node.style.display = "none";
+        continue;
+      }
+      var p = lonLatToWorld(co.lon, co.lat, z);
+      var sx = p.x - (c.x - w / 2);
+      while (sx < -worldW / 2) sx += worldW;
+      while (sx > worldW / 2) sx -= worldW;
+      if (sx < -40 || sx > w + 40) {
+        var sx2 = sx > w / 2 ? sx - worldW : sx + worldW;
+        if (sx2 >= -40 && sx2 <= w + 40) sx = sx2;
+      }
+      var sy = p.y - (c.y - h / 2);
+      if (sx < -80 || sx > w + 80 || sy < -40 || sy > h + 40) {
+        node.style.display = "none";
+        continue;
+      }
+      node.style.display = "";
+      node.style.left = Math.round(sx) + "px";
+      node.style.top = Math.round(sy) + "px";
+      node.style.fontSize = fs + "px";
+    }
+  }
+
+  function render() {
+    renderTiles();
+    renderLabels();
+  }
+
+  function setView(lon, lat, z) {
+    view.lon = ((lon + 540) % 360) - 180;
+    view.lat = clamp(lat, -85, 85);
+    view.z = clamp(z, MIN_Z, MAX_Z);
+    render();
+  }
+
+  function zoomAt(screenX, screenY, newZ) {
+    newZ = clamp(newZ, MIN_Z, MAX_Z);
+    if (newZ === view.z) return;
+    var w = mapEl.clientWidth;
+    var h = mapEl.clientHeight;
+    var c = centerWorld();
+    var wx = c.x - w / 2 + screenX;
+    var wy = c.y - h / 2 + screenY;
+    var before = worldToLonLat(wx, wy, view.z);
+    view.z = newZ;
+    var c2 = lonLatToWorld(before.lon, before.lat, view.z);
+    var newCenter = {
+      x: c2.x - screenX + w / 2,
+      y: c2.y - screenY + h / 2
+    };
+    var ll = worldToLonLat(newCenter.x, newCenter.y, view.z);
+    view.lon = ll.lon;
+    view.lat = clamp(ll.lat, -85, 85);
+    render();
+  }
+
+  function showInfo(co) {
+    selected = co;
+    infoEl.style.display = "block";
+    var hist = "";
+    if (co.historical) {
+      hist = "<br><i>" + t().historical + (co.years ? " · " + co.years : "") + "</i>";
+    }
+    infoEl.innerHTML =
+      '<span class="x" id="infox">✕</span>' +
+      "<b style=\"white-space:pre-line\">" + formatPrefixes(co.prefixes) + "</b> — " + countryName(co) +
+      (co.historical ? "" : " (" + co.iso + ")") + hist;
+    document.getElementById("infox").onclick = function () {
+      infoEl.style.display = "none";
+      selected = null;
+      for (var i = 0; i < labelNodes.length; i++) labelNodes[i].classList.remove("on");
+    };
+  }
+
+  function buildLabels() {
+    labelsEl.innerHTML = "";
+    labelNodes = [];
+    for (var i = 0; i < countries.length; i++) {
+      (function (co, idx) {
+        var el = document.createElement("div");
+        el.className = "lab" + (co.historical ? " hist" : "");
+        el.textContent = formatPrefixes(co.prefixes);
+        el.title = countryName(co) + " — " + co.prefixes.join(", ") +
+          (co.historical ? " (" + t().historical + ")" : "");
+        el.addEventListener("click", function (e) {
+          e.stopPropagation();
+          for (var j = 0; j < labelNodes.length; j++) labelNodes[j].classList.remove("on");
+          el.classList.add("on");
+          showInfo(co);
+        });
+        labelsEl.appendChild(el);
+        labelNodes[idx] = el;
+      })(countries[i], i);
+    }
+  }
+
+  function nameMatch(co, q) {
+    var n = co.name;
+    if (typeof n === "string") return n.toUpperCase().indexOf(q) !== -1;
+    for (var i = 0; i < LANGS.length; i++) {
+      var s = n[LANGS[i]];
+      if (s && s.toUpperCase().indexOf(q) !== -1) return true;
+    }
+    return false;
+  }
+
+  function nameStarts(co, q) {
+    var n = co.name;
+    if (typeof n === "string") return n.toUpperCase().indexOf(q) === 0;
+    for (var i = 0; i < LANGS.length; i++) {
+      var s = n[LANGS[i]];
+      if (s && s.toUpperCase().indexOf(q) === 0) return true;
+    }
+    return false;
+  }
+
+  function findMatch(q) {
+    q = q.trim().toUpperCase().replace(/\s+/g, " ");
+    if (!q) return null;
+    var i, co;
+    for (i = 0; i < countries.length; i++) {
+      co = countries[i];
+      if (co.iso === q || co.primary.toUpperCase() === q) return co;
+    }
+    for (i = 0; i < countries.length; i++) {
+      co = countries[i];
+      for (var j = 0; j < co.prefixes.length; j++) {
+        if (co.prefixes[j].toUpperCase() === q) return co;
+      }
+    }
+    var hits = [];
+    for (i = 0; i < countries.length; i++) {
+      co = countries[i];
+      for (var k = 0; k < co.prefixes.length; k++) {
+        if (co.prefixes[k].toUpperCase().indexOf(q) === 0) { hits.push(co); break; }
+      }
+      if (nameStarts(co, q)) hits.push(co);
+    }
+    if (hits.length) return hits[0];
+    for (i = 0; i < countries.length; i++) {
+      if (nameMatch(countries[i], q)) return countries[i];
+    }
+    return null;
+  }
+
+  function goTo(co) {
+    var z = 5;
+    var tiny = { MC:1, AD:1, SM:1, LI:1, VA:1, MT:1, LU:1, GI:1, SG:1, FDG:1 };
+    if (tiny[co.iso] || co.historical) z = 7;
+    var huge = { RU:1, CA:1, US:1, CN:1, BR:1, AU:1 };
+    if (huge[co.iso]) z = 3;
+    setView(co.lon, co.lat, z);
+    for (var i = 0; i < labelNodes.length; i++) {
+      labelNodes[i].classList.toggle("on", countries[i] === co);
+    }
+    showInfo(co);
+  }
+
+  mapEl.addEventListener("pointerdown", function (e) {
+    if (e.target.closest && e.target.closest(".lab")) return;
+    dragging = true;
+    mapEl.classList.add("drag");
+    lastX = e.clientX;
+    lastY = e.clientY;
+    mapEl.setPointerCapture(e.pointerId);
+  });
+  mapEl.addEventListener("pointermove", function (e) {
+    if (!dragging) return;
+    var dx = e.clientX - lastX;
+    var dy = e.clientY - lastY;
+    lastX = e.clientX;
+    lastY = e.clientY;
+    var c = centerWorld();
+    var ll = worldToLonLat(c.x - dx, c.y - dy, view.z);
+    view.lon = ll.lon;
+    view.lat = clamp(ll.lat, -85, 85);
+    render();
+  });
+  function endDrag() {
+    dragging = false;
+    mapEl.classList.remove("drag");
+  }
+  mapEl.addEventListener("pointerup", endDrag);
+  mapEl.addEventListener("pointercancel", endDrag);
+
+  mapEl.addEventListener("wheel", function (e) {
+    e.preventDefault();
+    var rect = mapEl.getBoundingClientRect();
+    var sx = e.clientX - rect.left;
+    var sy = e.clientY - rect.top;
+    var dz = e.deltaY > 0 ? -1 : 1;
+    zoomAt(sx, sy, view.z + dz);
+  }, { passive: false });
+
+  mapEl.addEventListener("touchstart", function (e) {
+    if (e.touches.length === 2) {
+      var a = e.touches[0], b = e.touches[1];
+      pinch = {
+        dist: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY),
+        z: view.z
+      };
+      dragging = false;
+    }
+  }, { passive: true });
+  mapEl.addEventListener("touchmove", function (e) {
+    if (!pinch || e.touches.length !== 2) return;
+    e.preventDefault();
+    var a = e.touches[0], b = e.touches[1];
+    var dist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+    var rect = mapEl.getBoundingClientRect();
+    var sx = (a.clientX + b.clientX) / 2 - rect.left;
+    var sy = (a.clientY + b.clientY) / 2 - rect.top;
+    var target = clamp(Math.round(pinch.z + Math.log2(dist / pinch.dist)), MIN_Z, MAX_Z);
+    if (target !== view.z) zoomAt(sx, sy, target);
+  }, { passive: false });
+  mapEl.addEventListener("touchend", function () { pinch = null; }, { passive: true });
+
+  document.getElementById("zin").onclick = function () {
+    zoomAt(mapEl.clientWidth / 2, mapEl.clientHeight / 2, view.z + 1);
+  };
+  document.getElementById("zout").onclick = function () {
+    zoomAt(mapEl.clientWidth / 2, mapEl.clientHeight / 2, view.z - 1);
+  };
+  document.getElementById("goEu").onclick = function () {
+    setView(15, 50, 4);
+  };
+  document.getElementById("goWorld").onclick = function () {
+    setView(10, 20, 2);
+  };
+
+  document.getElementById("lang").addEventListener("click", function (e) {
+    var btn = e.target.closest("button[data-lang]");
+    if (!btn) return;
+    setLang(btn.getAttribute("data-lang"));
+  });
+
+  qEl.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      var m = findMatch(qEl.value);
+      if (m) goTo(m);
+      else {
+        selected = null;
+        infoEl.style.display = "block";
+        infoEl.textContent = t().missing + qEl.value;
+      }
+    }
+  });
+
+  window.addEventListener("resize", render);
+
+  applyUi();
+
+  fetch("prefixes.json")
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      countries = data.countries || [];
+      buildLabels();
+      applyUi();
+      setView(15, 50, 4);
+    })
+    .catch(function () {
+      infoEl.style.display = "block";
+      infoEl.textContent = t().loadErr;
+    });
+})();
+</script>
+</body>
+</html>
